@@ -1,0 +1,27 @@
+{
+  "test_season": 2025,
+  "n_train_rows": 71650,
+  "n_test_rows": 14550,
+  "stage_type_accuracy": 1.0,
+  "roc_auc": 0.9502374246542065,
+  "brier": 0.0366102752743161,
+  "precision_at_10": 0.6164948453608247,
+  "winner_in_top5": 0.6701030927835051,
+  "baseline_precision_at_10": 0.31958762886597936,
+  "baseline_winner_in_top5": 0.36082474226804123,
+  "feature_importance": {
+    "sim_top10": 0.09898842293852388,
+    "sim_pct": 0.0953743907808633,
+    "age": 0.018810971258521512,
+    "sim_best": 0.006836676130756248,
+    "profile_score": 0.0013326298528764323,
+    "recent_pct": 0.001154145726735778,
+    "elevation_gain_m": 0.0003584561893628102,
+    "distance_km": 0.0002888875392860646,
+    "uphill_finish": 0.00019142766044675242,
+    "n_starts": 0.00018541517999486333,
+    "sim_weight": 9.248743604146625e-05,
+    "is_itt": 0.0
+  },
+  "data_dir": "data/sample"
+}
