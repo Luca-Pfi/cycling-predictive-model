@@ -10,7 +10,7 @@ a text file with one PCS rider URL per line, e.g. "rider/tadej-pogacar").
 Pages are cached in data/pcs_careers/cache, so you can stop and resume.
 
     python -m src.scrape_pcs_careers --years 2005-2025 --top 300 --out data/pcs_careers
-    python -m src.train_career --data data/pcs_careers --models models/career_pcs
+    python -m src.train_career --data data/pcs_careers   # the app then shows these riders
 """
 import argparse
 import json
