@@ -1,0 +1,120 @@
+{
+  "data_dir": "data/careers",
+  "cutoffs": {
+    "21": {
+      "cutoff": 21,
+      "best_model": "Lasso + age interactions",
+      "best_params": {
+        "alpha": 0.001
+      },
+      "n_riders": 3173,
+      "n_train_rows": 18967,
+      "n_test_rows": 4842,
+      "test_rmse": 0.9486764061202365,
+      "test_r2": 0.7672493991251037,
+      "interval_coverage_80": 0.811854605534903,
+      "survival_auc": 0.885100006149248,
+      "survival_brier": 0.1300154364990888,
+      "peak_spearman": 0.8554036267284805,
+      "peak_r2": 0.7127546004391134,
+      "peak_n": 415,
+      "inference_ols_r2": 0.7222950084435239,
+      "inference_ols_r2_adj": 0.7215020690640797,
+      "n_features_raw": 37,
+      "n_design_columns": 159,
+      "seconds": 190.9
+    },
+    "22": {
+      "cutoff": 22,
+      "best_model": "Lasso + age interactions",
+      "best_params": {
+        "alpha": 0.0003
+      },
+      "n_riders": 3011,
+      "n_train_rows": 16563,
+      "n_test_rows": 4235,
+      "test_rmse": 0.9342360366732184,
+      "test_r2": 0.7617771334073982,
+      "interval_coverage_80": 0.797874852420307,
+      "survival_auc": 0.8833360310893444,
+      "survival_brier": 0.1330248207689762,
+      "peak_spearman": 0.8490910405932887,
+      "peak_r2": 0.7047020439839031,
+      "peak_n": 369,
+      "inference_ols_r2": 0.7044155808782376,
+      "inference_ols_r2_adj": 0.7034307173020762,
+      "n_features_raw": 37,
+      "n_design_columns": 159,
+      "seconds": 213.4
+    },
+    "23": {
+      "cutoff": 23,
+      "best_model": "Lasso + age interactions",
+      "best_params": {
+        "alpha": 0.0003
+      },
+      "n_riders": 2827,
+      "n_train_rows": 14302,
+      "n_test_rows": 3669,
+      "test_rmse": 0.895507355377857,
+      "test_r2": 0.7650323407943408,
+      "interval_coverage_80": 0.8094848732624693,
+      "survival_auc": 0.8856645314507445,
+      "survival_brier": 0.13324909538186605,
+      "peak_spearman": 0.8558746568905737,
+      "peak_r2": 0.7029282784595634,
+      "peak_n": 332,
+      "inference_ols_r2": 0.6941328636263586,
+      "inference_ols_r2_adj": 0.6929519923291138,
+      "n_features_raw": 37,
+      "n_design_columns": 159,
+      "seconds": 195.6
+    },
+    "24": {
+      "cutoff": 24,
+      "best_model": "Lasso + age interactions",
+      "best_params": {
+        "alpha": 0.0003
+      },
+      "n_riders": 2500,
+      "n_train_rows": 12295,
+      "n_test_rows": 3176,
+      "test_rmse": 0.8829380520295472,
+      "test_r2": 0.7579159856390028,
+      "interval_coverage_80": 0.8022670025188917,
+      "survival_auc": 0.9012349029673903,
+      "survival_brier": 0.12176549920682993,
+      "peak_spearman": 0.8753846542112158,
+      "peak_r2": 0.6951071538477505,
+      "peak_n": 301,
+      "inference_ols_r2": 0.6770746987697895,
+      "inference_ols_r2_adj": 0.6756500283231857,
+      "n_features_raw": 37,
+      "n_design_columns": 159,
+      "seconds": 218.0
+    },
+    "25": {
+      "cutoff": 25,
+      "best_model": "Lasso + age interactions",
+      "best_params": {
+        "alpha": 0.0003
+      },
+      "n_riders": 2271,
+      "n_train_rows": 10478,
+      "n_test_rows": 2722,
+      "test_rmse": 0.8554250999701278,
+      "test_r2": 0.7601988055015364,
+      "interval_coverage_80": 0.8060249816311535,
+      "survival_auc": 0.899450207477986,
+      "survival_brier": 0.12435999513044721,
+      "peak_spearman": 0.8732508260972751,
+      "peak_r2": 0.6764155938380692,
+      "peak_n": 265,
+      "inference_ols_r2": 0.6778046851246928,
+      "inference_ols_r2_adj": 0.6761665086388533,
+      "n_features_raw": 37,
+      "n_design_columns": 159,
+      "seconds": 202.9
+    }
+  }
+}
