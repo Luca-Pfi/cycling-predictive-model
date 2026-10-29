@@ -1,5 +1,6 @@
 """Page 2: career trajectories and talent scouting (penalised linear regression)."""
 import json
+import os
 from pathlib import Path
 
 import joblib
@@ -12,7 +13,7 @@ from scipy import stats
 
 from src.career_model import CUTOFFS, LABELS, MAX_AGE, cutoff_features, project, summarise
 
-MODELS = Path("models/career")
+MODELS = Path(os.environ.get("CAREER_MODELS", "models/career"))
 BLUE, BLUE_BAND, ORANGE, GREY = "#2a78d6", "rgba(42,120,214,0.16)", "#eb6834", "#a3a29b"
 LEVEL_NAMES = {"amateur": "Amateur", "conti": "Continental", "pro": "ProTeam", "wt": "WorldTeam"}
 
@@ -53,7 +54,7 @@ def prospect_board(_arts, data_dir):
         summ = summarise(cur)
         p30 = cur[cur["target_age"] == max(30, c + 1)].set_index("rider_id")["p_active"]
         summ["p_racing_30"] = summ["rider_id"].map(p30)
-        summ = summ.merge(f[["rider_id", "lp_now", "current_level", "wins_total", "u23_wins_total"]],
+        summ = summ.merge(f.reindex(columns=["rider_id", "lp_now", "current_level", "wins_total", "u23_wins_total"]),
                           on="rider_id")
         summ["age"] = c
         boards.append(summ)
@@ -193,9 +194,10 @@ with tab_stars:
     show = view.head(30).assign(
         level=lambda d: d["current_level"].map(LEVEL_NAMES),
         interval=lambda d: [f"{a:,.0f} – {b:,.0f}" for a, b in zip(d["peak_lo"], d["peak_hi"])])
+    cols = ["name", "age", "nationality", "specialty", "level", "points_now", "u23_wins_total",
+            "peak_pts", "interval", "peak_age", "p_racing_30", "expected_career_pts"]
     st.dataframe(
-        show[["name", "age", "nationality", "specialty", "level", "points_now", "u23_wins_total",
-              "peak_pts", "interval", "peak_age", "p_racing_30", "expected_career_pts"]],
+        show[[c for c in cols if show[c].notna().any() and not (show[c] == "–").all()]],
         column_config={
             "name": "Rider", "age": "Age", "nationality": "Nat.", "specialty": "Specialty",
             "level": "Team level", "points_now": st.column_config.NumberColumn(f"Pts {last_season}", format="%d"),

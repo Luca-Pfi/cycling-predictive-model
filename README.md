@@ -73,20 +73,39 @@ diagnostics, Q-Q plot, accuracy vs cutoff age).
 
 ## Using real ProCyclingStats data
 
-```bash
-# stage results (page 1)
-python -m src.scrape_pcs --years 2019-2024 --out data/pcs
-python -m src.train --data data/pcs
+Both scrapers use the [`procyclingstats`](https://github.com/themm1/procyclingstats) package and
+keep every page as raw HTML in a cache (`data/pcs*/cache`), so a page is fetched at most once and
+runs can be stopped and resumed.
 
-# rider careers (page 2): PCS gives birthdate, nationality, height, weight,
-# points per season and team class; lab tests and U23 results are not on PCS,
-# so those variables are simply left out
-python -m src.scrape_pcs_careers --years 2005-2025 --top 300 --out data/pcs_careers
+**Option A: let the package download the pages** (polite, 1.5 s between requests):
+
+```bash
+python -m src.scrape_pcs_careers --years 2010-2025 --top 300   # -> data/pcs_careers
 python -m src.train_career --data data/pcs_careers
+python -m src.scrape_pcs --years 2019-2025                      # -> data/pcs
+python -m src.train --data data/pcs
+streamlit run app.py                                            # now shows real riders
 ```
 
-The scrapers are polite (1.5 s between requests) and cache every page, so you can stop and
-resume. Please respect the PCS terms of use.
+PCS is behind Cloudflare. If the package reports "Cloudflare protection detected", PCS is
+refusing automated requests from your connection; use option B instead of trying to get around it.
+
+**Option B: pages you saved in your browser.** Open the PCS pages you want (rider pages for the
+career model; race overview and stage pages for the stage model), use *Save page as...*
+(HTML only) into one folder, then:
+
+```bash
+python -m src.scrape_pcs_careers --import-dir ~/Downloads/pcs --offline
+python -m src.scrape_pcs --import-dir ~/Downloads/pcs --offline
+```
+
+Each saved file is recognised by its canonical PCS link, so file names don't matter.
+The parsers are tested against real PCS pages from the package's test fixtures.
+
+PCS does not publish lab tests, junior or U23 results, so on real data the career model uses the
+variables PCS has (age, nationality, height, weight, points per season, team level). On
+PCS-shaped data the test R² is about 0.63 (vs 0.54 for the baseline), compared with 0.77 when the
+extra variables are available. Please respect the PCS terms of use.
 
 ## Project layout
 
@@ -99,4 +118,4 @@ resume. Please respect the PCS terms of use.
 | `src/make_career_data.py` | Synthetic careers: hidden talent, early/late bloomers, team feedback loops, injuries, retirement |
 | `src/career_model.py` | Career features, design matrix (splines + interactions), projection |
 | `src/train_career.py` | Model comparison, inference, VIF, conformal intervals, survival model |
-| `src/scrape_pcs.py`, `src/scrape_pcs_careers.py` | Real data from ProCyclingStats |
+| `src/scrape_pcs.py`, `src/scrape_pcs_careers.py`, `src/pcs_pages.py` | Real data from ProCyclingStats (download or saved pages, HTML cache) |
