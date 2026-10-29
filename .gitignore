@@ -6,3 +6,4 @@ venv/
 # real scraped data (large; regenerate with src/scrape_pcs.py)
 data/pcs/
 data/pcs_careers/
+sources/

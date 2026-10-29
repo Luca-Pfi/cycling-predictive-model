@@ -16,8 +16,7 @@ from sklearn.ensemble import HistGradientBoostingClassifier, RandomForestClassif
 from sklearn.inspection import permutation_importance
 from sklearn.metrics import accuracy_score, brier_score_loss, roc_auc_score
 
-from src.features import (MODEL_FEATURES, STAGE_FEATURES, build_training_table,
-                          load_data)
+from src.features import build_training_table, load_data, model_features, stage_features
 
 
 def ranking_metrics(df, score_col):
@@ -39,7 +38,9 @@ def new_ranker():
 
 def main(data_dir, model_dir):
     stages, riders, results = load_data(data_dir)
-    print("Building leak-free features ...")
+    STAGE_FEATURES = stage_features(stages)
+    MODEL_FEATURES = model_features(STAGE_FEATURES)
+    print(f"Stage features: {STAGE_FEATURES}\nBuilding leak-free features ...")
     table = build_training_table(stages, riders, results)
     table = table[table["n_starts"] >= 5]  # need some history to say anything
 
@@ -92,6 +93,7 @@ def main(data_dir, model_dir):
     joblib.dump(final, out / "top10_model.joblib")
     test[["stage_id", "rider_id", "rank", "top10", "p_top10"]].to_csv(out / "test_predictions.csv", index=False)
     metrics["data_dir"] = Path(data_dir).as_posix()  # relative to the repo root
+    metrics["stage_features"] = STAGE_FEATURES
     (out / "metrics.json").write_text(json.dumps(metrics, indent=2))
     print(f"Saved models to {out}/")
 

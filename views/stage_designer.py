@@ -7,10 +7,10 @@ import pandas as pd
 import plotly.express as px
 import streamlit as st
 
-from src.features import (MODEL_FEATURES, STAGE_FEATURES, STAGE_TYPES,
-                          add_percentiles, features_for_new_stage, load_data)
+from src.features import (STAGE_FEATURES, STAGE_TYPES, add_percentiles,
+                          features_for_new_stage, load_data, model_features)
 
-MODELS = Path("models")
+MODELS = Path(st.session_state.get("models_root", "models"))
 TYPE_COLORS = {"flat": "#2a9d8f", "hilly": "#e9c46a", "mountain": "#e76f51", "itt": "#577590"}
 PRESETS = {  # distance, elevation, profile score, uphill finish, itt
     "Bunch sprint": (195, 900, 12, False, False),
@@ -21,12 +21,16 @@ PRESETS = {  # distance, elevation, profile score, uphill finish, itt
     "Flat time trial": (32, 250, 10, False, True),
     "Uphill time trial": (18, 900, 90, True, True),
 }
+# datasets without a profile (e.g. the open Tour de France data): distance + terrain
+TERRAIN_PRESETS = {"Flat stage": (205, "flat"), "Hilly stage": (190, "hilly"),
+                   "Mountain stage": (175, "mountain"), "Individual time trial": (35, "itt")}
 
 @st.cache_resource
-def load_models():
-    meta = json.loads((MODELS / "metrics.json").read_text())
-    return (joblib.load(MODELS / "stage_type_model.joblib"),
-            joblib.load(MODELS / "top10_model.joblib"), meta)
+def load_models(models_dir):
+    d = Path(models_dir)
+    meta = json.loads((d / "metrics.json").read_text())
+    return (joblib.load(d / "stage_type_model.joblib"),
+            joblib.load(d / "top10_model.joblib"), meta)
 
 
 @st.cache_data
@@ -39,14 +43,18 @@ if not (MODELS / "metrics.json").exists():
              "and `python -m src.train` first.")
     st.stop()
 
-type_model, top10_model, meta = load_models()
+type_model, top10_model, meta = load_models(str(MODELS))
 stages, riders, results = load_all(meta["data_dir"])
+SF = meta.get("stage_features", STAGE_FEATURES)
+MF = model_features(SF)
+meta_file = Path(meta["data_dir"]) / "meta.json"
+data_title = json.loads(meta_file.read_text())["title"] if meta_file.exists() else f"`{meta['data_dir']}`"
 season = int(stages["year"].max()) + 1
 names = riders.set_index("rider_id")["name"]
 teams = riders.set_index("rider_id")["team"]
 
 st.title("🚴 Who suits this stage?")
-st.caption(f"Data: `{meta['data_dir']}` · {len(stages)} stages · {riders.shape[0]} riders · "
+st.caption(f"Data: {data_title} · {len(stages)} stages · {riders.shape[0]} riders · "
            f"predictions for the {season} season")
 
 tab_pred, tab_model, tab_rider = st.tabs(["Stage designer", "Model performance", "Rider explorer"])
@@ -54,33 +62,41 @@ tab_pred, tab_model, tab_rider = st.tabs(["Stage designer", "Model performance",
 # ---------------------------------------------------------------- designer
 with st.sidebar:
     st.header("Design a stage")
-    preset = st.selectbox("Start from a preset", list(PRESETS))
-    d, e, ps, up, itt = PRESETS[preset]
-    distance = st.slider("Distance (km)", 10, 260, d, key=f"d{preset}")
-    elevation = st.slider("Elevation gain (m)", 0, 6000, e, step=50, key=f"e{preset}")
-    profile = st.slider("Profile score (hardness)", 0, 450, ps, key=f"p{preset}",
-                        help="PCS-style score: roughly the sum of (climb steepness² × length), "
-                             "weighted towards climbs near the finish.")
-    uphill = st.checkbox("Uphill finish", up, key=f"u{preset}")
-    is_itt = st.checkbox("Individual time trial", itt, key=f"t{preset}")
+    if "profile_score" in SF:
+        preset = st.selectbox("Start from a preset", list(PRESETS))
+        d, e, ps, up, itt = PRESETS[preset]
+        distance = st.slider("Distance (km)", 10, 260, d, key=f"d{preset}")
+        elevation = st.slider("Elevation gain (m)", 0, 6000, e, step=50, key=f"e{preset}")
+        profile = st.slider("Profile score (hardness)", 0, 450, ps, key=f"p{preset}",
+                            help="PCS-style score: roughly the sum of (climb steepness² × length), "
+                                 "weighted towards climbs near the finish.")
+        uphill = st.checkbox("Uphill finish", up, key=f"u{preset}")
+        is_itt = st.checkbox("Individual time trial", itt, key=f"t{preset}")
+        stage = dict(distance_km=distance, elevation_gain_m=elevation, profile_score=profile,
+                     uphill_finish=int(uphill), is_itt=int(is_itt))
+    else:
+        preset = st.selectbox("Start from a preset", list(TERRAIN_PRESETS))
+        d, terrain = TERRAIN_PRESETS[preset]
+        distance = st.slider("Distance (km)", 10, 260, d, key=f"d{preset}")
+        terrain = st.radio("Terrain", STAGE_TYPES, index=STAGE_TYPES.index(terrain), key=f"r{preset}",
+                           format_func=lambda t: {"itt": "time trial"}.get(t, t))
+        stage = dict(distance_km=distance, is_itt=int(terrain == "itt"),
+                     is_hilly=int(terrain == "hilly"), is_mountain=int(terrain == "mountain"))
     top_n = st.slider("Riders to show", 5, 30, 15)
     min_starts = st.slider("Min. starts in the last season", 1, 40, 10)
-
-stage = dict(distance_km=distance, elevation_gain_m=elevation, profile_score=profile,
-             uphill_finish=int(uphill), is_itt=int(is_itt))
 
 last = stages[stages["year"] == season - 1]["stage_id"]
 active = results[results["stage_id"].isin(last)]["rider_id"].value_counts()
 active = active[active >= min_starts].index
 
 feats, sim_row = features_for_new_stage(stage, stages, riders, results, active, season)
-feats["p_top10"] = top10_model.predict_proba(feats[MODEL_FEATURES])[:, 1]
+feats["p_top10"] = top10_model.predict_proba(feats[MF])[:, 1]
 feats["name"] = feats["rider_id"].map(names)
 feats["team"] = feats["rider_id"].map(teams)
 board = feats.nlargest(top_n, "p_top10").iloc[::-1]
 
 with tab_pred:
-    type_probs = pd.Series(type_model.predict_proba(pd.DataFrame([stage])[STAGE_FEATURES])[0],
+    type_probs = pd.Series(type_model.predict_proba(pd.DataFrame([stage])[SF])[0],
                            index=type_model.classes_).reindex(STAGE_TYPES).fillna(0)
     kind = type_probs.idxmax()
     c1, c2, c3, c4 = st.columns(4)
@@ -88,7 +104,10 @@ with tab_pred:
               delta_color="off")
     c2.metric("Favourite", board.iloc[-1]["name"], f"{board.iloc[-1]['p_top10']:.0%} top-10",
               delta_color="off")
-    c3.metric("Climbing per km", f"{elevation / max(distance, 1):.0f} m")
+    if "elevation_gain_m" in stage:
+        c3.metric("Climbing per km", f"{stage['elevation_gain_m'] / max(distance, 1):.0f} m")
+    else:
+        c3.metric("Past stages of this type", int((stages["stage_type"] == kind).sum()))
     c4.metric("Riders evaluated", len(feats))
 
     left, right = st.columns([2, 1])
@@ -115,7 +134,7 @@ with tab_pred:
     sim = stages.assign(similarity=sim_row).nlargest(8, "similarity")
     winners = results[results["rank"] == 1].set_index("stage_id")["rider_id"].map(names)
     sim["winner"] = sim["stage_id"].map(winners)
-    st.dataframe(sim[["race", "date", "stage_type", *STAGE_FEATURES, "winner", "similarity"]]
+    st.dataframe(sim[["race", "date", "stage_type", *[f for f in SF if not f.startswith("is_")], "winner", "similarity"]]
                  .style.format({"similarity": "{:.2f}", "distance_km": "{:.0f}", "date": lambda x: f"{x:%Y-%m-%d}"}),
                  hide_index=True, width="stretch")
 

@@ -71,6 +71,45 @@ historical riders, and honest backtests on held-out riders) · 🎛️ what-if s
 🔬 model insight (model comparison, coefficient plot with CIs, VIF, Lasso terms, residual
 diagnostics, Q-Q plot, accuracy vs cutoff age).
 
+## Real data (default in the app)
+
+The sidebar switch **Data** chooses between real riders and the synthetic demo. The real data
+is built from three openly licensed datasets of real riders. Nothing is scraped:
+
+| Source | Licence | What it gives |
+|---|---|---|
+| [TidyTuesday 2020-04-07](https://github.com/rfordatascience/tidytuesday/tree/main/data/2020/2020-04-07) | CC0 | Every Tour de France stage result 1903–2017 (rider, age, team, rank) and stage distance/type |
+| [LeTourDataSet](https://github.com/thomascamminady/LeTourDataSet) | MIT | Final Tour de France GC of every edition |
+| [josselingirault/procyclingstats.com-webscraper](https://github.com/josselingirault/procyclingstats.com-webscraper) | MIT | Birthdate, country, height, weight of the 1,005 riders in 2018 teams |
+
+Rebuild it:
+
+```bash
+mkdir -p sources && cd sources
+git clone --depth 1 --filter=blob:none --sparse https://github.com/rfordatascience/tidytuesday
+git -C tidytuesday sparse-checkout set data/2020/2020-04-07
+git clone --depth 1 https://github.com/thomascamminady/LeTourDataSet letourdataset
+git clone --depth 1 https://github.com/josselingirault/procyclingstats.com-webscraper jg
+cd ..
+python -m src.import_open_data --sources sources --from-year 1985   # -> data/tdf_stages, data/tdf_careers
+python -m src.train --data data/tdf_stages --models models/tdf
+python -m src.train_career --data data/tdf_careers --models models/tdf/career --cutoffs 23,24,25,26,27
+```
+
+What changes with real data:
+- **Stage page:** Tour de France 1985–2017 (694 stages, 1,783 riders). There is no elevation
+  or profile score, so a stage is described by distance + terrain (flat / hilly / mountain / time
+  trial). On the held-out 2017 Tour: ROC AUC 0.89, 49% of the predicted top 10 really finished top
+  10 (form-only baseline 21%), and the stage winner was in the predicted top 5 on 48% of stages
+  (baseline 5%).
+- **Career page:** one "season" = one Tour de France, scored from the real results (stage places
+  1–20: 100→6 points, final GC places 1–20: 600→25 points). Riders average only 3.5 Tours and 36% of
+  Tours score 0, so careers are much harder to predict than in the demo: test R² is 0.10–0.17
+  (Ridge, slightly better than the baseline), peak rank correlation 0.24–0.52, survival AUC
+  0.76–0.79. Cutoff ages are 23–27 because few riders start the Tour younger.
+- The source keeps a few annulled results (e.g. 2006/2007 stage wins) next to the reassigned
+  ones; the importer keeps one rider per place in the source's order.
+
 ## Using real ProCyclingStats data
 
 Both scrapers use the [`procyclingstats`](https://github.com/themm1/procyclingstats) package and
@@ -118,4 +157,5 @@ extra variables are available. Please respect the PCS terms of use.
 | `src/make_career_data.py` | Synthetic careers: hidden talent, early/late bloomers, team feedback loops, injuries, retirement |
 | `src/career_model.py` | Career features, design matrix (splines + interactions), projection |
 | `src/train_career.py` | Model comparison, inference, VIF, conformal intervals, survival model |
+| `src/import_open_data.py` | Real Tour de France datasets from open sources |
 | `src/scrape_pcs.py`, `src/scrape_pcs_careers.py`, `src/pcs_pages.py` | Real data from ProCyclingStats (download or saved pages, HTML cache) |

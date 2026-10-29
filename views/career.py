@@ -13,7 +13,7 @@ from scipy import stats
 
 from src.career_model import CUTOFFS, LABELS, MAX_AGE, cutoff_features, project, summarise
 
-MODELS = Path(os.environ.get("CAREER_MODELS", "models/career"))
+MODELS = Path(os.environ.get("CAREER_MODELS") or Path(st.session_state.get("models_root", "models")) / "career")
 BLUE, BLUE_BAND, ORANGE, GREY = "#2a78d6", "rgba(42,120,214,0.16)", "#eb6834", "#a3a29b"
 LEVEL_NAMES = {"amateur": "Amateur", "conti": "Continental", "pro": "ProTeam", "wt": "WorldTeam"}
 
@@ -39,7 +39,7 @@ def features_at(data_dir, cutoff):
 
 @st.cache_data
 def prospect_board(_arts, data_dir):
-    """Every rider aged 21-25 who raced last season, projected from today."""
+    """Every rider at a cutoff age who raced last season, projected from today."""
     riders, seasons = load_careers(data_dir)
     last = int(seasons["season"].max())
     now = seasons[seasons["season"] == last]
@@ -96,7 +96,7 @@ def career_chart(curve, actual, cutoff, similar=None, title=""):
         line=dict(color=BLUE, width=2.5),
         customdata=np.c_[curve["lo_pts"], curve["hi_pts"], curve["p_active"]],
         hovertemplate="age %{x}: %{y:,.0f} pts<br>80%: %{customdata[0]:,.0f}–%{customdata[1]:,.0f}"
-                      "<br>P(still racing) %{customdata[2]:.0%}<extra></extra>"))
+                      "<br>P(" + ACTIVE + ") %{customdata[2]:.0%}<extra></extra>"))
     fig.add_trace(go.Scatter(x=actual["age"], y=actual["points"].clip(lower=1), mode="lines+markers",
                              name="Actual", line=dict(color=ORANGE, width=2), marker=dict(size=8),
                              hovertemplate="age %{x}: %{y:,.0f} pts<extra></extra>"))
@@ -106,14 +106,14 @@ def career_chart(curve, actual, cutoff, similar=None, title=""):
     fig.update_layout(title=title, height=460, hovermode="closest", margin=dict(t=50, b=10),
                       legend=dict(orientation="h", y=-0.15),
                       xaxis=dict(title="Age", range=[18.5, MAX_AGE + 0.5], dtick=2),
-                      yaxis=dict(title="PCS points per season (log scale)", type="log"))
+                      yaxis=dict(title=f"{PTS} per {SEASON} (log scale)", type="log"))
     return fig
 
 
 def survival_chart(curve, height=240):
     fig = px.line(curve, x="target_age", y="p_active", markers=True,
-                  labels={"target_age": "Age", "p_active": "P(still racing)"},
-                  title="Probability of still racing")
+                  labels={"target_age": "Age", "p_active": f"P({ACTIVE})"},
+                  title=f"Probability of {ACTIVE}")
     fig.update_traces(line_color=BLUE, line_width=2,
                       hovertemplate="age %{x}: %{y:.0%}<extra></extra>")
     fig.update_layout(height=height, yaxis=dict(range=[0, 1.02], tickformat=".0%"),
@@ -129,18 +129,24 @@ if not (MODELS / "summary.json").exists():
 
 summary, arts = load_artifacts()
 data_dir = summary["data_dir"]
+_meta = Path(data_dir) / "meta.json"
+DATA_META = json.loads(_meta.read_text()) if _meta.exists() else {}
+PTS = DATA_META.get("points_label", "PCS points")
+SEASON = DATA_META.get("season_word", "season")
+ACTIVE = DATA_META.get("active_word", "still racing")
+AGES = f"{min(arts)}–{max(arts)}"
 riders, seasons = load_careers(data_dir)
 names = riders.set_index("rider_id")["name"]
 board, prospect_curves, last_season = prospect_board(arts, data_dir)
 
 st.title("📈 Career trajectory & talent scouting")
-st.caption(f"Data: `{data_dir}` · {len(riders):,} riders · {len(seasons):,} rider-seasons · "
+st.caption(f"Data: {DATA_META.get('title', f'`{data_dir}`')} · {len(riders):,} riders · {len(seasons):,} rider-seasons · "
            f"projections from the end of the {last_season} season")
 with st.expander("How the model works"):
-    m = arts[23]["metrics"]
+    m = arts[min(arts, key=lambda c: abs(c - 23))]["metrics"]
     st.markdown(f"""
-A rider's file is frozen at a **cutoff age** (21–25). Everything known by then is used to
-predict their **log PCS points at every later age**:
+A rider's file is frozen at a **cutoff age** ({AGES}). Everything known by then is used to
+predict their **log {PTS} at every later age**. {DATA_META.get("points_note", "")}
 
 * **{m['n_features_raw']} raw variables**: lab tests (VO2max, FTP, sprint power), body (height,
   weight, BMI), background and age they started cycling, nationality, specialty, junior results,
@@ -151,7 +157,7 @@ predict their **log PCS points at every later age**:
   interactions** (so variables can bend the shape of the curve, not just move it up or down).
 * **OLS, Ridge, Lasso and Elastic Net** are compared with 5-fold cross-validation **grouped by
   rider** (no rider is in both training and validation). Best at age 23: **{m['best_model']}**.
-* **Survivorship**: a logistic regression estimates P(still racing) at each age; weak riders
+* **Survivorship**: a logistic regression estimates P({ACTIVE}) at each age; weak riders
   retire, so their missing seasons are not random.
 * **Prediction intervals**: split-conformal, from out-of-fold residuals at each horizon.
 * **Inference**: a separate OLS on main effects with rider-clustered standard errors gives
@@ -171,7 +177,7 @@ with tab_stars:
 
     top = view.iloc[0] if len(view) else None
     k1, k2, k3, k4 = st.columns(4)
-    k1.metric("Prospects (age 21–25)", len(view))
+    k1.metric(f"Prospects (age {AGES})", len(view))
     if top is not None:
         k2.metric("Highest projected peak", top["name"], f"{top['peak_pts']:,.0f} pts at {top['peak_age']}",
                   delta_color="off")
@@ -251,7 +257,7 @@ with tab_rider:
         k4.metric("Real peak after cutoff", f"{future['points'].max():,.0f} pts" if len(future) else "retired")
     else:
         p30 = curve.loc[curve["target_age"] == max(30, cutoff + 1), "p_active"].iloc[0]
-        k4.metric("P(still racing at 30)", f"{p30:.0%}")
+        k4.metric(f"P({ACTIVE} at 30)", f"{p30:.0%}")
 
     left, right = st.columns([3, 1])
     with left:
@@ -287,7 +293,8 @@ with tab_whatif:
     c1, c2, c3 = st.columns(3)
     mod = base.copy()
     has = lambda col: col in b0 and pd.notna(b0[col])
-    pts = c1.slider(f"Points in the cutoff season ({last_season})", 0, 3000, int(np.expm1(b0["lp_now"])), step=10)
+    pts = c1.slider(f"{PTS} in the cutoff {SEASON} ({last_season})", 0,
+                    int(max(3000, seasons["points"].max())), int(np.expm1(b0["lp_now"])), step=10)
     # (column, widget column, label, min, max, step, transform from/to the slider value)
     knobs = [("vo2max", c1, "VO2max", 60.0, 95.0, 0.5, float, float),
              ("ftp_wkg_u23", c1, "FTP at 19 (W/kg)", 4.0, 6.8, 0.05, float, float),
@@ -340,7 +347,7 @@ with tab_whatif:
     past = seasons[seasons["rider_id"] == rid_w]
     fig.add_trace(go.Scatter(x=past["age"], y=past["points"].clip(lower=1), mode="markers", name="Actual so far",
                              marker=dict(color=GREY, size=8)))
-    fig.update_layout(height=430, yaxis=dict(type="log", title="PCS points per season (log scale)"),
+    fig.update_layout(height=430, yaxis=dict(type="log", title=f"{PTS} per {SEASON} (log scale)"),
                       xaxis=dict(title="Age", range=[18.5, MAX_AGE + 2.5], dtick=2),
                       legend=dict(orientation="h", y=-0.18), margin=dict(t=30))
     st.plotly_chart(fig, width="stretch")

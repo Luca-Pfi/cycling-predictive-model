@@ -1,0 +1,32 @@
+{
+  "test_season": 2017,
+  "n_train_rows": 103229,
+  "n_test_rows": 3566,
+  "stage_type_accuracy": 1.0,
+  "roc_auc": 0.8861238730929264,
+  "brier": 0.041809841873525065,
+  "precision_at_10": 0.48571428571428565,
+  "winner_in_top5": 0.47619047619047616,
+  "baseline_precision_at_10": 0.20952380952380953,
+  "baseline_winner_in_top5": 0.047619047619047616,
+  "feature_importance": {
+    "sim_top10": 0.1032126964863614,
+    "sim_best": 0.03647162505779,
+    "is_hilly": 0.012917533518261571,
+    "recent_pct": 0.012539730698104346,
+    "sim_pct": 0.010309466019417336,
+    "sim_weight": 0.00882527161349964,
+    "age": 0.0070209200184927715,
+    "is_mountain": 0.004001242487286061,
+    "distance_km": 0.0011206946370780457,
+    "n_starts": 0.00016484627831701016,
+    "is_itt": -8.263985205743118e-05
+  },
+  "data_dir": "data/tdf_stages",
+  "stage_features": [
+    "distance_km",
+    "is_itt",
+    "is_hilly",
+    "is_mountain"
+  ]
+}

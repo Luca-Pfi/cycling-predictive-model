@@ -1,8 +1,9 @@
 """Shared schema + leak-free feature engineering.
 
-Data schema (same for the synthetic sample and the real PCS scrape):
-  stages.csv  : stage_id, race, year, date, distance_km, elevation_gain_m,
-                profile_score, uphill_finish, is_itt, stage_type
+Data schema (same for the synthetic sample, the PCS scrape and the open Tour data):
+  stages.csv  : stage_id, race, year, date, distance_km, is_itt, stage_type and
+                either the profile (elevation_gain_m, profile_score, uphill_finish)
+                or the terrain flags (is_hilly, is_mountain)
   riders.csv  : rider_id, name, team, birth_year
   results.csv : stage_id, rider_id, rank
 """
@@ -11,7 +12,9 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
-STAGE_FEATURES = ["distance_km", "elevation_gain_m", "profile_score", "uphill_finish", "is_itt"]
+ALL_STAGE_FEATURES = ["distance_km", "elevation_gain_m", "profile_score", "uphill_finish", "is_itt",
+                      "is_hilly", "is_mountain"]
+STAGE_FEATURES = ALL_STAGE_FEATURES[:5]  # the synthetic / PCS profile set
 STAGE_TYPES = ["flat", "hilly", "mountain", "itt"]
 
 RIDER_FEATURES = [
@@ -23,10 +26,18 @@ RIDER_FEATURES = [
     "n_starts",
     "age",
 ]
-MODEL_FEATURES = STAGE_FEATURES + RIDER_FEATURES
-
 # Scale used to standardise stage vectors before measuring stage similarity.
-_SCALE = np.array([60.0, 1200.0, 80.0, 0.7, 0.35])
+_SCALE = dict(distance_km=60.0, elevation_gain_m=1200.0, profile_score=80.0, uphill_finish=0.7,
+              is_itt=0.35, is_hilly=0.5, is_mountain=0.5)
+
+
+def stage_features(stages):
+    """The stage columns this dataset actually has."""
+    return [f for f in ALL_STAGE_FEATURES if f in stages and stages[f].notna().all()]
+
+
+def model_features(stage_feats):
+    return list(stage_feats) + RIDER_FEATURES
 _BANDWIDTH = 1.0
 _SHRINK = 2.0  # pseudo-observations pulling sparse histories towards average
 RECENT_N = 15
@@ -41,13 +52,17 @@ def load_data(data_dir):
     return stages, riders, results
 
 
-def stage_matrix(stages):
-    return stages[STAGE_FEATURES].to_numpy(dtype=float) / _SCALE
+def _scale(feats):
+    return np.array([_SCALE[f] for f in feats])
 
 
-def similarity(stage_vec, hist_matrix):
+def stage_matrix(stages, feats):
+    return stages[feats].to_numpy(dtype=float) / _scale(feats)
+
+
+def similarity(stage_vec, hist_matrix, feats):
     """Gaussian-kernel similarity between one stage and many past stages."""
-    d2 = (((hist_matrix - stage_vec / _SCALE) ** 2)).sum(axis=1)
+    d2 = (((hist_matrix - stage_vec / _scale(feats)) ** 2)).sum(axis=1)
     return np.exp(-d2 / (2 * _BANDWIDTH**2))
 
 
@@ -81,8 +96,9 @@ def add_percentiles(results):
 def build_training_table(stages, riders, results):
     """One row per (stage, starter) using only results from earlier dates."""
     results = add_percentiles(results)
+    feats_st = stage_features(stages)
     stage_pos = {sid: i for i, sid in enumerate(stages["stage_id"])}
-    X = stage_matrix(stages)
+    X = stage_matrix(stages, feats_st)
     birth = riders.set_index("rider_id")["birth_year"].to_dict()
     by_stage = {sid: g for sid, g in results.groupby("stage_id")}
 
@@ -95,7 +111,7 @@ def build_training_table(stages, riders, results):
             if g is None:
                 continue
             i = stage_pos[st.stage_id]
-            sim_row = similarity(X[i] * _SCALE, X)
+            sim_row = similarity(X[i] * _scale(feats_st), X, feats_st)
             for r in g.itertuples():
                 h = history.get(r.rider_id, ([], [], []))
                 feats = rider_features(
@@ -106,7 +122,7 @@ def build_training_table(stages, riders, results):
                     st.year - birth.get(r.rider_id, st.year - 27),
                 )
                 rows.append([st.stage_id, r.rider_id, st.date, r.rank, r.top10,
-                             *st[STAGE_FEATURES].tolist(), *feats])
+                             *st[feats_st].tolist(), *feats])
                 pending.append((r.rider_id, i, r.pct, r.top10))
         # results of this day only become history after the whole day is done
         for rid, i, pct, t10 in pending:
@@ -115,9 +131,9 @@ def build_training_table(stages, riders, results):
             h[1].append(pct)
             h[2].append(t10)
 
-    cols = ["stage_id", "rider_id", "date", "rank", "top10"] + MODEL_FEATURES
+    cols = ["stage_id", "rider_id", "date", "rank", "top10"] + model_features(feats_st)
     df = pd.DataFrame(rows, columns=cols)
-    df[STAGE_FEATURES] = df[STAGE_FEATURES].astype(float)
+    df[feats_st] = df[feats_st].astype(float)
     return df
 
 
@@ -128,8 +144,9 @@ def features_for_new_stage(stage, stages, riders, results, rider_ids, season):
     results = results[results["stage_id"].isin(stage_pos)].copy()
     results["pos"] = results["stage_id"].map(stage_pos)
     results = results.sort_values("pos")
-    sim_row = similarity(np.array([stage[f] for f in STAGE_FEATURES], dtype=float),
-                         stage_matrix(stages))
+    feats_st = stage_features(stages)
+    sim_row = similarity(np.array([stage[f] for f in feats_st], dtype=float),
+                         stage_matrix(stages, feats_st), feats_st)
     birth = riders.set_index("rider_id")["birth_year"].to_dict()
     by_rider = {rid: g for rid, g in results.groupby("rider_id")}
 
@@ -140,7 +157,7 @@ def features_for_new_stage(stage, stages, riders, results, rider_ids, season):
             continue
         feats = rider_features(sim_row, g["pos"].to_numpy(), g["pct"].to_numpy(),
                                g["top10"].to_numpy(), season - birth[rid])
-        rows.append([rid, *[stage[f] for f in STAGE_FEATURES], *feats])
-    df = pd.DataFrame(rows, columns=["rider_id"] + MODEL_FEATURES)
-    df[STAGE_FEATURES] = df[STAGE_FEATURES].astype(float)
+        rows.append([rid, *[stage[f] for f in feats_st], *feats])
+    df = pd.DataFrame(rows, columns=["rider_id"] + model_features(feats_st))
+    df[feats_st] = df[feats_st].astype(float)
     return df, sim_row
