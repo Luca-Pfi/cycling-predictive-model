@@ -1,9 +1,0 @@
-__pycache__/
-*.pyc
-.venv/
-venv/
-.streamlit/secrets.toml
-# real scraped data (large; regenerate with src/scrape_pcs.py)
-data/pcs/
-data/pcs_careers/
-sources/
