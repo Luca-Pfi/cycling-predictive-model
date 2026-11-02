@@ -1,0 +1,2 @@
+procyclingstats>=0.2.8
+selectolax<1.0  # procyclingstats 0.2.8 does not work with selectolax 1.x
