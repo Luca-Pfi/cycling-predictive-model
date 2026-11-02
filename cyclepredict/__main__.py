@@ -7,6 +7,7 @@
     python -m cyclepredict update               # new results + upcoming profiles/startlists,
                                                 # score past previews, retrain, refresh previews
     python -m cyclepredict train | preview | evaluate
+    python -m cyclepredict site                 # build the static website into _site/
     python -m cyclepredict import-pages FOLDER  # PCS pages saved from a browser
 """
 import argparse
@@ -114,6 +115,8 @@ def main():
     sub.add_parser("train")
     sub.add_parser("preview")
     sub.add_parser("evaluate")
+    sp = sub.add_parser("site")
+    sp.add_argument("--out", default="_site")
     ip = sub.add_parser("import-pages")
     ip.add_argument("folder")
     a = ap.parse_args()
@@ -137,6 +140,9 @@ def main():
     elif a.cmd == "evaluate":
         from cyclepredict import evaluate
         evaluate.evaluate()
+    elif a.cmd == "site":
+        from cyclepredict import site
+        site.build(a.out)
     elif a.cmd == "import-pages":
         from cyclepredict.pcs import PageStore
         print(f"imported {PageStore(offline=True).import_saved(a.folder)} pages")

@@ -51,6 +51,11 @@ def race_patterns(stages, slug, as_of, profile_group=None):
     )
 
 
+def _typical_size(patterns):
+    size = patterns.get("winning_break_size")
+    return int(size) if size and size == size else 6
+
+
 def _pct(x):
     return f"{100 * x:.0f}%"
 
@@ -63,11 +68,11 @@ def key_paths(stage, rider, profile, patterns, p_break_wins, live=None, break_ri
     route_bunch = (1 - p_break_wins) * rider.get("p_win_if_caught", 0)
     tips = []
     total = route_break + route_bunch
-    if total > 0:
-        tips.append(f"Most likely route to victory: {'from the breakaway' if route_break > route_bunch else 'from the favourites group'} "
-                    f"({_pct(route_break / total)} via the break, {_pct(route_bunch / total)} via the bunch).")
+    if total > 0 and 0.15 <= route_break / total <= 0.85:
+        tips.append(f"Two ways to win: {_pct(route_break / total)} of his chance comes from the break, "
+                    f"{_pct(route_bunch / total)} from the bunch.")
     solo_km, q = patterns.get("solo_km_median"), patterns.get("solo_km_q")
-    window = f"{q[0]:.0f}–{q[1]:.0f} km" if q else (f"~{solo_km:.0f} km" if solo_km == solo_km else None)
+    window = f"{q[0]:.0f}–{q[1]:.0f} km" if q else (f"about {solo_km:.0f} km" if solo_km == solo_km else None)
     last = stage.get("last_climb")
     last_txt = f"{last} (cat. {stage.get('last_climb_cat')})" if isinstance(last, str) else "the last climb"
 
@@ -76,31 +81,31 @@ def key_paths(stage, rider, profile, patterns, p_break_wins, live=None, break_ri
     if in_break or (break_riders is None and candidate):
         lm = live or LiveModel()
         need = lm.gap_needed(LiveState(stage_id=stage["stage_id"], km_to_go=50, gap_s=0,
-                                       break_riders=list(break_riders or range(int(patterns.get("winning_break_size") or 6))),
+                                       break_riders=list(break_riders or range(_typical_size(patterns))),
                                        hard_finish=icon in ("p3", "p5")))
         if not in_break:
             size = patterns.get("winning_break_size")
-            tips.append(f"Breakaway candidate ({_pct(rider['p_break'])} to make the move); the break wins this stage with "
-                        f"{_pct(p_break_wins)}." + (f" Breaks that survived here had a median of {size:.0f} riders: "
-                                                    f"push for a big group." if size == size else ""))
-        tips.append("For the break to stay away it needs about " + ", ".join(
-            f"{v // 60}:{v % 60:02d} at {k} km" for k, v in need.items() if k in (50, 30, 20, 10)) + " to go (50/50 line).")
+            tips.append(f"{_pct(rider['p_break'])} to make the break, which wins this stage {_pct(p_break_wins)} of the time."
+                        + ("" if size != size else f" Breaks that stayed away here were big (median {size:.0f} riders): get a large group going."
+                           if size >= 8 else f" Breaks that stayed away here were small (median {size:.0f} riders)."))
+        tips.append("The break needs about " + ", ".join(
+            f"{v // 60}:{v % 60:02d} at {k} km" for k, v in need.items() if k in (50, 30, 20, 10)) + " to go for even chances.")
         fastest = rider.get("finale_rank", 99) <= 1
         if fastest:
-            tips.append("Likely the fastest finisher of the break: keep working until the gap is safe, then follow "
-                        "moves and wait for the sprint.")
+            tips.append("Probably the fastest finisher in the break: work until the gap is safe, then follow the moves "
+                        "and wait for the sprint.")
         else:
-            tips.append("Not the fastest in the break: attack it before the final kilometre"
-                        + (f" — winning solos here went {window} from the line." if window else ".")
-                        + (f" {last_txt} is the natural springboard." if isinstance(last, str) else ""))
+            tips.append("Not the fastest finisher in the break: attack before the last kilometre."
+                        + (f" Winning solos here went {window} from the line." if window else "")
+                        + (f" {last_txt} is the obvious place." if isinstance(last, str) else ""))
         if p_survive is not None:
             tips.append(f"Live: the break survives with {_pct(p_survive)}; "
                         + ("cooperate, the gap is not safe yet." if p_survive < 0.6 else "the gap looks safe, the race is now inside the break."))
         return tips
 
     if "sprinter" in rtype and grp == "flat":
-        tips.append(f"Needs the bunch sprint ({_pct(patterns.get('sprint_share', 0))} of past editions/stages ended that way): "
-                    "his team must keep the break within reach.")
+        tips.append(f"Needs a bunch sprint, the way {_pct(patterns.get('sprint_share', 0))} of these stages ended; "
+                    "his team has to keep the break within reach.")
     elif "puncheur" in rtype or (grp == "hills" and icon == "p3"):
         tips.append(f"Wait for the uphill finish / final climb {last_txt}; attack inside the last 2 km."
                     if icon == "p3" else f"Attack on {last_txt} or in the final kilometres before a reduced sprint.")
@@ -110,7 +115,7 @@ def key_paths(stage, rider, profile, patterns, p_break_wins, live=None, break_ri
     elif "time triallist" in rtype:
         tips.append("Late long-range attack before the sprinters' teams organise, or bridge to the break on a climb.")
     if patterns.get("solo_share", 0) >= 0.3 and window:
-        tips.append(f"Solo wins are common here ({_pct(patterns['solo_share'])}): the winning move typically goes {window} from the finish.")
+        tips.append(f"{_pct(patterns['solo_share'])} of wins here were solos, launched {window} from the finish.")
     if p_break_wins >= 0.4:
-        tips.append(f"The break is favoured ({_pct(p_break_wins)}): his team needs riders in it or must chase from far out.")
+        tips.append(f"The break wins {_pct(p_break_wins)} of the time: his team needs a rider in it, or has to chase from far out.")
     return tips

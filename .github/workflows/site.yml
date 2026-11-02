@@ -1,0 +1,67 @@
+# Builds the website and publishes it on GitHub Pages.
+#
+# On every push to main, every day, or by hand: train the models (season-by-season
+# test + final models), store previews of upcoming races, score previews of finished
+# races, commit the previews back (they are the honest record of what was said before
+# each race), build the static site and deploy it.
+#
+# PCS data is not downloaded here (PCS blocks automated requests from servers): push
+# data/real/ from a computer that can fetch it, or add the official API to this job.
+name: Site
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: "23 4 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: site
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Train
+        run: python -m cyclepredict train
+      - name: Previews of upcoming races
+        run: python -m cyclepredict preview
+      - name: Score previews of finished races
+        run: python -m cyclepredict evaluate
+      - name: Keep previews and track record in the repository
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/predictions data/track_record.csv
+          if ! git diff --cached --quiet; then
+            git commit -m "Store previews and track record [skip ci]"
+            git push
+          fi
+      - name: Build site
+        run: python -m cyclepredict site --out _site
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

@@ -16,8 +16,10 @@ TRACK = config.DATA / "track_record.csv"
 
 
 def score_version(meta, riders, stage, res):
-    r = riders.merge(res[["rider_id", "rank", "in_break"]], on="rider_id", how="left")
+    # outer join: a winner or break rider the stored preview left out counts with probability 0
+    r = riders.merge(res[["rider_id", "rank", "in_break"]], on="rider_id", how="outer")
     r["in_break"] = r["in_break"].fillna(False).astype(bool)
+    r[["p_break", "p_win"]] = r[["p_break", "p_win"]].fillna(0.0)
     won = r[r["rank"] == 1]
     p_bw = meta["p_break_wins"]
     out = dict(stage_id=stage["stage_id"], slug=stage["slug"], date=stage["date"].date().isoformat(),

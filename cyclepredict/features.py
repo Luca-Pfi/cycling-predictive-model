@@ -78,21 +78,41 @@ def stage_history(st):
 
 
 def starters(t, stage_ids):
-    """Who starts each stage: the result list once raced, else the startlist minus abandons."""
+    """Who starts each stage: the result list once raced, else the startlist minus abandons.
+
+    Before PCS publishes a startlist, the field of the last edition (riders who have
+    raced in the past year, in their current team) stands in as a provisional field,
+    flagged in the `provisional` column.
+    """
     st = t["stages"].set_index("stage_id")
     res = t["results"]
-    raced = res[res["stage_id"].isin(stage_ids)][["stage_id", "rider_id", "team"]]
+    raced = res[res["stage_id"].isin(stage_ids)][["stage_id", "rider_id", "team"]].assign(provisional=False)
     done = set(raced["stage_id"])
     todo = [s for s in stage_ids if s not in done]
     rows = []
+    if todo:
+        dated = res[["stage_id", "rider_id", "team"]].merge(st[["date", "slug", "year"]], left_on="stage_id", right_index=True)
+        dated = dated.sort_values("date")
+        latest = dated.groupby("rider_id")[["date", "team"]].last()
+        starts = t["startlists"]
     for sid in todo:
         race_id, k = st.at[sid, "race_id"], st.at[sid, "stage_index"]
-        sl = t["startlists"][t["startlists"]["race_id"] == race_id][["rider_id", "team"]]
+        sl = starts[starts["race_id"] == race_id][["rider_id", "team"]]
+        provisional = sl.empty
         prev = st[(st["race_id"] == race_id) & (st["stage_index"] < k) & st["finished"].astype(bool)]
         if len(prev):  # riders who abandoned earlier in the race do not start
             last = res[res["stage_id"] == prev.index[-1]]
             sl = last[last["status"].isin(["DF", "OTL"])][["rider_id", "team"]] if len(last) else sl
-        rows.append(sl.assign(stage_id=sid))
+            provisional = False
+        if sl.empty:  # no startlist yet: last edition's field, still active riders
+            slug, year, date = st.at[sid, "slug"], st.at[sid, "year"], st.at[sid, "date"]
+            past = dated[(dated["slug"] == slug) & (dated["year"] < year)]
+            if len(past):
+                ids = past[past["year"] == past["year"].max()]["rider_id"].unique()
+                act = latest.reindex(ids)
+                act = act[act["date"] >= date - pd.Timedelta(days=365)]
+                sl = pd.DataFrame({"rider_id": act.index, "team": act["team"].to_numpy()})
+        rows.append(sl.assign(stage_id=sid, provisional=provisional))
     return pd.concat([raced] + rows, ignore_index=True) if rows else raced
 
 
@@ -163,7 +183,7 @@ def build(t, stage_ids, hist=None, shist=None):
     f["team_rank"] = strength.groupby([q["stage_id"], q["team"]]).rank(ascending=False, method="first")
     f["is_leader"] = (f["team_rank"] == 1).astype(float)
 
-    rows = pd.concat([q[["stage_id", "rider_id", "team", "date", "grp"]], f], axis=1)
+    rows = pd.concat([q[["stage_id", "rider_id", "team", "date", "grp", "provisional"]], f], axis=1)
     stages = stage_rows(t, stage_ids, rows, shist)
     rows = rows.merge(stages, on="stage_id", how="left", suffixes=("", "_s"))
     return rows, stages
