@@ -1,0 +1,104 @@
+anj_name,name,pcs_slug,gender,kind,country,slug_status,month,terrain
+Tour Down Under,Santos Tour Down Under,tour-down-under,men,stage_race,AU,unverified,1,hilly
+Cadel Evans Ocean Road,Cadel Evans Great Ocean Road Race,cadel-evans-great-ocean-road-race,men,one_day,AU,unverified,2,hilly
+Tour de la communauté valencienne,Volta a la Comunitat Valenciana,volta-a-la-comunitat-valenciana,men,stage_race,ES,unverified,2,hilly
+Clasica de Almeria,Clásica de Almería,clasica-de-almeria,men,one_day,ES,unverified,2,flat
+Tour d'Oman,Tour of Oman,tour-of-oman,men,stage_race,OM,unverified,2,hilly
+Tour de l'UAE,UAE Tour,uae-tour,men,stage_race,AE,unverified,2,mixed
+Figuiera Champions Classic,Figueira Champions Classic,figueira-champions-classic,men,one_day,PT,unverified,2,hilly
+Tour de l'Algarve,Volta ao Algarve,volta-ao-algarve,men,stage_race,PT,unverified,2,mixed
+Tour de l'Andalousie,Vuelta a Andalucía,vuelta-a-andalucia,men,stage_race,ES,unverified,2,hilly
+Tour de Provence,Tour de la Provence,tour-de-la-provence,men,stage_race,FR,unverified,2,mixed
+Circuit Het Niewsblad,Omloop Het Nieuwsblad,omloop-het-nieuwsblad,men,one_day,BE,unverified,3,cobbles
+Kuurne-Bruxelles-Kuurne,Kuurne-Brussel-Kuurne,kuurne-brussel-kuurne,men,one_day,BE,unverified,3,cobbles
+Ardèche Classic,Faun-Ardèche Classic,faun-ardeche-classic,men,one_day,FR,unverified,3,hilly
+Drôme Classic,La Drôme Classic,la-drome-classic,men,one_day,FR,unverified,3,hilly
+Trophée Laigueglia,Trofeo Laigueglia,trofeo-laigueglia,men,one_day,IT,unverified,3,hilly
+Stade Bianche,Strade Bianche,strade-bianche,men,one_day,IT,unverified,3,hilly
+Paris-Nice,Paris-Nice,paris-nice,men,stage_race,FR,unverified,3,mixed
+Tirreno-Adriatico,Tirreno-Adriatico,tirreno-adriatico,men,stage_race,IT,unverified,3,mixed
+Nokere Koerse,Nokere Koerse,nokere-koerse,men,one_day,BE,unverified,3,cobbles
+Grand Prix de Denain,GP de Denain,gp-de-denain,men,one_day,FR,unverified,3,cobbles
+Bredene Coxyde Classic,Bredene Koksijde Classic,bredene-koksijde-classic,men,one_day,BE,unverified,3,flat
+Milan-San Remo,Milano-Sanremo,milano-sanremo,men,one_day,IT,unverified,3,flat
+Tour de Catalogne,Volta a Catalunya,volta-a-catalunya,men,stage_race,ES,unverified,3,mountain
+Classic Bruges La Panne,Classic Brugge-De Panne,classic-brugge-de-panne,men,one_day,BE,unverified,3,flat
+E3 Classic,E3 Saxo Classic,e3-harelbeke,men,one_day,BE,unverified,3,cobbles
+Gand-Wevelgem,Gent-Wevelgem,gent-wevelgem,men,one_day,BE,unverified,3,cobbles
+A travers les Flandres,Dwars door Vlaanderen,dwars-door-vlaanderen,men,one_day,BE,unverified,3,cobbles
+Tour des Flandres,Ronde van Vlaanderen,ronde-van-vlaanderen,men,one_day,BE,confirmed,4,cobbles
+Tour du Pays Basque,Itzulia Basque Country,itzulia-basque-country,men,stage_race,ES,unverified,4,mountain
+Grand Prix Indurain,GP Miguel Induráin,gp-miguel-indurain,men,one_day,ES,unverified,4,hilly
+Grand Prix de l'Escaut,Scheldeprijs,scheldeprijs,men,one_day,BE,unverified,4,flat
+Paris-Roubaix,Paris-Roubaix,paris-roubaix,men,one_day,FR,confirmed,4,cobbles
+La Flèche Brabançonne,Brabantse Pijl,brabantse-pijl,men,one_day,BE,unverified,4,hilly
+Amstel Gold Race,Amstel Gold Race,amstel-gold-race,men,one_day,NL,unverified,4,hilly
+Tour des Alpes,Tour of the Alps,tour-of-the-alps,men,stage_race,IT,unverified,4,mountain
+La Flèche Wallonne,La Flèche Wallonne,la-fleche-wallone,men,one_day,BE,unverified,4,hilly
+Liège-Bastogne-Liège,Liège-Bastogne-Liège,liege-bastogne-liege,men,one_day,BE,unverified,4,hilly
+Tour de Romandie,Tour de Romandie,tour-de-romandie,men,stage_race,CH,unverified,4,mountain
+Tour de Hongrie,Tour de Hongrie,tour-de-hongrie,men,stage_race,HU,unverified,5,mixed
+Grand Prix de Francfort,Eschborn-Frankfurt,eschborn-frankfurt,men,one_day,DE,unverified,5,hilly
+Grand Prix du Morbihan,Grand Prix du Morbihan,gp-du-morbihan,men,one_day,FR,unverified,5,hilly
+Tro Bro Leon,Tro Bro Leon,tro-bro-leon,men,one_day,FR,unverified,5,cobbles
+4 Jours de Dunkerque,Quatre Jours de Dunkerque,4-jours-de-dunkerque,men,stage_race,FR,unverified,5,mixed
+Classique Dunkerque,Classique Dunkerque,classique-dunkerque,men,one_day,FR,unverified,5,flat
+Tour d'Italie - Giro,Giro d'Italia,giro-d-italia,men,stage_race,IT,unverified,5,mountain
+Boucles de la Mayenne,Boucles de la Mayenne,boucles-de-la-mayenne,men,stage_race,FR,unverified,5,hilly
+Tour de Norvège,Tour of Norway,tour-of-norway,men,stage_race,NO,unverified,5,hilly
+Tour Auvergne Rhône Alpes,Tour Auvergne-Rhône-Alpes (Dauphiné),dauphine,men,stage_race,FR,unverified,6,mountain
+Tour de Slovénie,Tour of Slovenia,tour-of-slovenia,men,stage_race,SI,unverified,6,mountain
+Brussels Cycling Classic,Brussels Cycling Classic,brussels-cycling-classic,men,one_day,BE,unverified,6,hilly
+A travers le Hageland,Dwars door het Hageland,dwars-door-het-hageland,men,one_day,BE,unverified,6,cobbles
+Mont Ventoux Dénivelé Challenges,Mont Ventoux Dénivelé Challenge,mont-ventoux-denivele-challenge,men,one_day,FR,unverified,6,mountain
+Tour de Belgique,Baloise Belgium Tour,baloise-belgium-tour,men,stage_race,BE,unverified,6,flat
+Tour de Suisse,Tour de Suisse,tour-de-suisse,men,stage_race,CH,unverified,6,mountain
+Copenhagen Sprint,Copenhagen Sprint,copenhagen-sprint,men,one_day,DK,unverified,6,flat
+Tour de France,Tour de France,tour-de-france,men,stage_race,FR,confirmed,7,mountain
+Tour de Wallonie,Tour de Wallonie,tour-de-wallonie,men,stage_race,BE,unverified,7,hilly
+Classica San Sebastian,Clásica San Sebastián,san-sebastian,men,one_day,ES,unverified,8,hilly
+Tour de Pologne,Tour de Pologne,tour-de-pologne,men,stage_race,PL,confirmed,8,mixed
+Tour de Burgos,Vuelta a Burgos,vuelta-a-burgos,men,stage_race,ES,unverified,8,mountain
+Artic Race,Arctic Race of Norway,arctic-race-of-norway,men,stage_race,NO,unverified,8,hilly
+Tour du Danemark,Danmark Rundt,danmark-rundt,men,stage_race,DK,unverified,8,flat
+Tour d'Espagne - Vuelta,Vuelta a España,vuelta-a-espana,men,stage_race,ES,unverified,8,mountain
+Tour d'Allemagne,Deutschland Tour,deutschland-tour,men,stage_race,DE,unverified,8,hilly
+Renewi Tour (Tour du Bénélux),Renewi Tour,benelux-tour,men,stage_race,BE,unverified,8,flat
+EuroEyes Cyclassics Hambourg,Cyclassics Hamburg,cyclassics-hamburg,men,one_day,DE,unverified,8,flat
+Bretagne Ouest France Classic,Bretagne Classic,bretagne-classic,men,one_day,FR,unverified,8,hilly
+Circuit Franco-Belge,Circuit Franco-Belge,circuit-franco-belge,men,stage_race,BE,unverified,8,flat
+Maryland Cycling classic,Maryland Cycling Classic,maryland-cycling-classic,men,one_day,US,unverified,9,hilly
+Tour de Grande-Bretagne,Tour of Britain,tour-of-britain,men,stage_race,GB,unverified,9,hilly
+Grand Prix Cycliste de Québec,GP de Québec,gp-quebec,men,one_day,CA,unverified,9,hilly
+Grand Prix Cycliste de Montréal,GP de Montréal,gp-montreal,men,one_day,CA,unverified,9,hilly
+Grand Prix de Fourmies,GP de Fourmies,gp-de-fourmies,men,one_day,FR,unverified,9,flat
+Grand Prix de Wallonie,GP de Wallonie,gp-de-wallonie,men,one_day,BE,unverified,9,hilly
+Tour du Luxembourg,Tour de Luxembourg,tour-de-luxembourg,men,stage_race,LU,unverified,9,hilly
+Coupe Sabbatini,Coppa Sabatini,coppa-sabatini,men,one_day,IT,unverified,9,hilly
+Grand Prix Industrie et de l'Artisanat,GP Industria & Artigianato,gp-industria-artigianato-di-larciano,men,one_day,IT,unverified,9,hilly
+Super 8 classic,Super 8 Classic,super-8-classic,men,one_day,BE,unverified,9,flat
+Tour de Munster,Münsterland Giro,sparkassen-munsterland-giro,men,one_day,DE,unverified,10,flat
+Tour d'Emilie,Giro dell'Emilia,giro-dell-emilia,men,one_day,IT,unverified,10,hilly
+Coupe Bernocchi,Coppa Bernocchi,coppa-bernocchi,men,one_day,IT,unverified,10,hilly
+Trois Vallées Varésine,Tre Valli Varesine,tre-valli-varesine,men,one_day,IT,unverified,10,hilly
+Milan-Turin,Milano-Torino,milano-torino,men,one_day,IT,unverified,3,hilly
+Tour du Piémont (Gran Piemonte),Gran Piemonte,gran-piemonte,men,one_day,IT,unverified,10,hilly
+Tour de Lombardie,Il Lombardia,il-lombardia,men,one_day,IT,unverified,10,mountain
+Paris-Tours,Paris-Tours,paris-tours,men,one_day,FR,unverified,10,flat
+Tour de Vénétie,Giro del Veneto,giro-del-veneto,men,one_day,IT,unverified,10,hilly
+Veneto Classic,Veneto Classic,veneto-classic,men,one_day,IT,unverified,10,hilly
+Coupe du Japon de course sur route (Japan Cup Road Race),Japan Cup,japan-cup,men,one_day,JP,unverified,10,hilly
+Tour de Guanggxi,Tour of Guangxi,tour-of-guangxi,men,stage_race,CN,unverified,10,mixed
+Tour de France Femmes,Tour de France Femmes,tour-de-france-femmes,women,stage_race,FR,unverified,8,mountain
+UCI Road World Championships,World Championships road race,world-championship,men,championship,INT,unverified,9,hilly
+UCI Road World Championships,World Championships ITT,world-championship-itt,men,championship_itt,INT,unverified,9,flat
+UCI Road World Championships,World Championships road race (women),world-championship-we,women,championship,INT,unverified,9,hilly
+UCI Road World Championships,World Championships ITT (women),world-championship-itt-we,women,championship_itt,INT,unverified,9,flat
+UEC Road European Championships,European Championships road race,uec-road-european-championships,men,championship,INT,unverified,10,hilly
+UEC Road European Championships,European Championships ITT,uec-road-european-championships-itt,men,championship_itt,INT,unverified,10,flat
+UEC Road European Championships,European Championships road race (women),uec-road-european-championships-we,women,championship,INT,unverified,10,hilly
+UEC Road European Championships,European Championships ITT (women),uec-road-european-championships-itt-we,women,championship_itt,INT,unverified,10,flat
+Jeux Olympiques,Olympic Games road race,olympic-games,men,championship,INT,unverified,8,hilly
+Jeux Olympiques,Olympic Games ITT,olympic-games-itt,men,championship_itt,INT,unverified,8,flat
+Jeux Olympiques,Olympic Games road race (women),olympic-games-we,women,championship,INT,unverified,8,hilly
+Jeux Olympiques,Olympic Games ITT (women),olympic-games-itt-we,women,championship_itt,INT,unverified,8,flat

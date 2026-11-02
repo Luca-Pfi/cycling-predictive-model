@@ -1,2 +1,9 @@
+pandas>=2.0
+numpy>=1.26
+scikit-learn>=1.4
+scipy>=1.11
+joblib>=1.3
+streamlit>=1.50
+plotly>=5.20
 procyclingstats>=0.2.8
 selectolax<1.0  # procyclingstats 0.2.8 does not work with selectolax 1.x

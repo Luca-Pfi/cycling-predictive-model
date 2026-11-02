@@ -1,0 +1,702 @@
+race_id,slug,year,name,gender,kind,uci_tour,startdate,enddate
+tour-down-under/2020,tour-down-under,2020,Santos Tour Down Under,men,stage_race,2.UWT,2020-01-03,2020-01-08
+figueira-champions-classic/2020,figueira-champions-classic,2020,Figueira Champions Classic,men,one_day,1.Pro,2020-02-02,2020-02-02
+uae-tour/2020,uae-tour,2020,UAE Tour,men,stage_race,2.UWT,2020-02-03,2020-02-09
+tour-of-oman/2020,tour-of-oman,2020,Tour of Oman,men,stage_race,2.Pro,2020-02-04,2020-02-08
+clasica-de-almeria/2020,clasica-de-almeria,2020,Clásica de Almería,men,one_day,1.Pro,2020-02-07,2020-02-07
+cadel-evans-great-ocean-road-race/2020,cadel-evans-great-ocean-road-race,2020,Cadel Evans Great Ocean Road Race,men,one_day,1.UWT,2020-02-09,2020-02-09
+volta-ao-algarve/2020,volta-ao-algarve,2020,Volta ao Algarve,men,stage_race,2.Pro,2020-02-09,2020-02-13
+vuelta-a-andalucia/2020,vuelta-a-andalucia,2020,Vuelta a Andalucía,men,stage_race,2.Pro,2020-02-12,2020-02-16
+volta-a-la-comunitat-valenciana/2020,volta-a-la-comunitat-valenciana,2020,Volta a la Comunitat Valenciana,men,stage_race,2.Pro,2020-02-15,2020-02-19
+tour-de-la-provence/2020,tour-de-la-provence,2020,Tour de la Provence,men,stage_race,2.Pro,2020-02-19,2020-02-23
+faun-ardeche-classic/2020,faun-ardeche-classic,2020,Faun-Ardèche Classic,men,one_day,1.Pro,2020-03-01,2020-03-01
+strade-bianche/2020,strade-bianche,2020,Strade Bianche,men,one_day,1.UWT,2020-03-03,2020-03-03
+tirreno-adriatico/2020,tirreno-adriatico,2020,Tirreno-Adriatico,men,stage_race,2.UWT,2020-03-04,2020-03-10
+milano-sanremo/2020,milano-sanremo,2020,Milano-Sanremo,men,one_day,1.UWT,2020-03-04,2020-03-04
+dwars-door-vlaanderen/2020,dwars-door-vlaanderen,2020,Dwars door Vlaanderen,men,one_day,1.UWT,2020-03-05,2020-03-05
+trofeo-laigueglia/2020,trofeo-laigueglia,2020,Trofeo Laigueglia,men,one_day,1.Pro,2020-03-06,2020-03-06
+kuurne-brussel-kuurne/2020,kuurne-brussel-kuurne,2020,Kuurne-Brussel-Kuurne,men,one_day,1.Pro,2020-03-08,2020-03-08
+e3-harelbeke/2020,e3-harelbeke,2020,E3 Saxo Classic,men,one_day,1.UWT,2020-03-10,2020-03-10
+la-drome-classic/2020,la-drome-classic,2020,La Drôme Classic,men,one_day,1.Pro,2020-03-12,2020-03-12
+nokere-koerse/2020,nokere-koerse,2020,Nokere Koerse,men,one_day,1.Pro,2020-03-12,2020-03-12
+volta-a-catalunya/2020,volta-a-catalunya,2020,Volta a Catalunya,men,stage_race,2.UWT,2020-03-13,2020-03-19
+gent-wevelgem/2020,gent-wevelgem,2020,Gent-Wevelgem,men,one_day,1.UWT,2020-03-13,2020-03-13
+omloop-het-nieuwsblad/2020,omloop-het-nieuwsblad,2020,Omloop Het Nieuwsblad,men,one_day,1.UWT,2020-03-17,2020-03-17
+gp-de-denain/2020,gp-de-denain,2020,GP de Denain,men,one_day,1.Pro,2020-03-18,2020-03-18
+bredene-koksijde-classic/2020,bredene-koksijde-classic,2020,Bredene Koksijde Classic,men,one_day,1.Pro,2020-03-18,2020-03-18
+classic-brugge-de-panne/2020,classic-brugge-de-panne,2020,Classic Brugge-De Panne,men,one_day,1.UWT,2020-03-19,2020-03-19
+paris-nice/2020,paris-nice,2020,Paris-Nice,men,stage_race,2.UWT,2020-03-20,2020-03-27
+milano-torino/2020,milano-torino,2020,Milano-Torino,men,one_day,1.Pro,2020-03-21,2020-03-21
+itzulia-basque-country/2020,itzulia-basque-country,2020,Itzulia Basque Country,men,stage_race,2.UWT,2020-04-01,2020-04-06
+amstel-gold-race/2020,amstel-gold-race,2020,Amstel Gold Race,men,one_day,1.UWT,2020-04-09,2020-04-09
+ronde-van-vlaanderen/2020,ronde-van-vlaanderen,2020,Ronde van Vlaanderen,men,one_day,1.UWT,2020-04-12,2020-04-12
+la-fleche-wallone/2020,la-fleche-wallone,2020,La Flèche Wallonne,men,one_day,1.UWT,2020-04-12,2020-04-12
+tour-of-the-alps/2020,tour-of-the-alps,2020,Tour of the Alps,men,stage_race,2.Pro,2020-04-13,2020-04-17
+liege-bastogne-liege/2020,liege-bastogne-liege,2020,Liège-Bastogne-Liège,men,one_day,1.UWT,2020-04-16,2020-04-16
+brabantse-pijl/2020,brabantse-pijl,2020,Brabantse Pijl,men,one_day,1.Pro,2020-04-17,2020-04-17
+tour-de-romandie/2020,tour-de-romandie,2020,Tour de Romandie,men,stage_race,2.UWT,2020-04-18,2020-04-23
+gp-miguel-indurain/2020,gp-miguel-indurain,2020,GP Miguel Induráin,men,one_day,1.Pro,2020-04-19,2020-04-19
+scheldeprijs/2020,scheldeprijs,2020,Scheldeprijs,men,one_day,1.Pro,2020-04-19,2020-04-19
+paris-roubaix/2020,paris-roubaix,2020,Paris-Roubaix,men,one_day,1.UWT,2020-04-20,2020-04-20
+giro-d-italia/2020,giro-d-italia,2020,Giro d'Italia,men,stage_race,2.UWT,2020-05-04,2020-05-26
+boucles-de-la-mayenne/2020,boucles-de-la-mayenne,2020,Boucles de la Mayenne,men,stage_race,2.Pro,2020-05-06,2020-05-10
+tro-bro-leon/2020,tro-bro-leon,2020,Tro Bro Leon,men,one_day,1.Pro,2020-05-09,2020-05-09
+4-jours-de-dunkerque/2020,4-jours-de-dunkerque,2020,Quatre Jours de Dunkerque,men,stage_race,2.Pro,2020-05-09,2020-05-13
+tour-of-norway/2020,tour-of-norway,2020,Tour of Norway,men,stage_race,2.Pro,2020-05-14,2020-05-18
+eschborn-frankfurt/2020,eschborn-frankfurt,2020,Eschborn-Frankfurt,men,one_day,1.UWT,2020-05-16,2020-05-16
+tour-de-hongrie/2020,tour-de-hongrie,2020,Tour de Hongrie,men,stage_race,2.Pro,2020-05-19,2020-05-23
+classique-dunkerque/2020,classique-dunkerque,2020,Classique Dunkerque,men,one_day,1.Pro,2020-05-20,2020-05-20
+gp-du-morbihan/2020,gp-du-morbihan,2020,Grand Prix du Morbihan,men,one_day,1.Pro,2020-05-21,2020-05-21
+mont-ventoux-denivele-challenge/2020,mont-ventoux-denivele-challenge,2020,Mont Ventoux Dénivelé Challenge,men,one_day,1.Pro,2020-06-01,2020-06-01
+brussels-cycling-classic/2020,brussels-cycling-classic,2020,Brussels Cycling Classic,men,one_day,1.Pro,2020-06-05,2020-06-05
+baloise-belgium-tour/2020,baloise-belgium-tour,2020,Baloise Belgium Tour,men,stage_race,2.Pro,2020-06-05,2020-06-09
+copenhagen-sprint/2020,copenhagen-sprint,2020,Copenhagen Sprint,men,one_day,1.UWT,2020-06-05,2020-06-05
+dwars-door-het-hageland/2020,dwars-door-het-hageland,2020,Dwars door het Hageland,men,one_day,1.Pro,2020-06-06,2020-06-06
+tour-de-suisse/2020,tour-de-suisse,2020,Tour de Suisse,men,stage_race,2.UWT,2020-06-10,2020-06-17
+dauphine/2020,dauphine,2020,Tour Auvergne-Rhône-Alpes (Dauphiné),men,stage_race,2.UWT,2020-06-13,2020-06-20
+tour-of-slovenia/2020,tour-of-slovenia,2020,Tour of Slovenia,men,stage_race,2.Pro,2020-06-20,2020-06-24
+tour-de-wallonie/2020,tour-de-wallonie,2020,Tour de Wallonie,men,stage_race,2.Pro,2020-07-05,2020-07-09
+tour-de-france/2020,tour-de-france,2020,Tour de France,men,stage_race,2.UWT,2020-07-20,2020-08-11
+benelux-tour/2020,benelux-tour,2020,Renewi Tour,men,stage_race,2.UWT,2020-08-01,2020-08-05
+bretagne-classic/2020,bretagne-classic,2020,Bretagne Classic,men,one_day,1.UWT,2020-08-02,2020-08-02
+tour-de-france-femmes/2020,tour-de-france-femmes,2020,Tour de France Femmes,women,stage_race,2.UWT,2020-08-03,2020-08-10
+olympic-games-we/2020,olympic-games-we,2020,Olympic Games road race (women),women,championship,1.Pro,2020-08-03,2020-08-03
+olympic-games/2020,olympic-games,2020,Olympic Games road race,men,championship,1.Pro,2020-08-04,2020-08-04
+vuelta-a-burgos/2020,vuelta-a-burgos,2020,Vuelta a Burgos,men,stage_race,2.Pro,2020-08-05,2020-08-09
+danmark-rundt/2020,danmark-rundt,2020,Danmark Rundt,men,stage_race,2.Pro,2020-08-07,2020-08-11
+vuelta-a-espana/2020,vuelta-a-espana,2020,Vuelta a España,men,stage_race,2.UWT,2020-08-07,2020-08-29
+san-sebastian/2020,san-sebastian,2020,Clásica San Sebastián,men,one_day,1.UWT,2020-08-08,2020-08-08
+arctic-race-of-norway/2020,arctic-race-of-norway,2020,Arctic Race of Norway,men,stage_race,2.Pro,2020-08-08,2020-08-12
+deutschland-tour/2020,deutschland-tour,2020,Deutschland Tour,men,stage_race,2.Pro,2020-08-09,2020-08-13
+circuit-franco-belge/2020,circuit-franco-belge,2020,Circuit Franco-Belge,men,stage_race,2.Pro,2020-08-09,2020-08-13
+tour-de-pologne/2020,tour-de-pologne,2020,Tour de Pologne,men,stage_race,2.UWT,2020-08-10,2020-08-16
+olympic-games-itt-we/2020,olympic-games-itt-we,2020,Olympic Games ITT (women),women,championship_itt,1.Pro,2020-08-11,2020-08-11
+olympic-games-itt/2020,olympic-games-itt,2020,Olympic Games ITT,men,championship_itt,1.Pro,2020-08-13,2020-08-13
+cyclassics-hamburg/2020,cyclassics-hamburg,2020,Cyclassics Hamburg,men,one_day,1.UWT,2020-08-20,2020-08-20
+maryland-cycling-classic/2020,maryland-cycling-classic,2020,Maryland Cycling Classic,men,one_day,1.Pro,2020-09-02,2020-09-02
+gp-industria-artigianato-di-larciano/2020,gp-industria-artigianato-di-larciano,2020,GP Industria & Artigianato,men,one_day,1.Pro,2020-09-04,2020-09-04
+gp-de-fourmies/2020,gp-de-fourmies,2020,GP de Fourmies,men,one_day,1.Pro,2020-09-07,2020-09-07
+super-8-classic/2020,super-8-classic,2020,Super 8 Classic,men,one_day,1.Pro,2020-09-07,2020-09-07
+world-championship/2020,world-championship,2020,World Championships road race,men,championship,1.Pro,2020-09-08,2020-09-08
+tour-of-britain/2020,tour-of-britain,2020,Tour of Britain,men,stage_race,2.Pro,2020-09-10,2020-09-14
+gp-quebec/2020,gp-quebec,2020,GP de Québec,men,one_day,1.UWT,2020-09-10,2020-09-10
+gp-de-wallonie/2020,gp-de-wallonie,2020,GP de Wallonie,men,one_day,1.Pro,2020-09-10,2020-09-10
+world-championship-itt-we/2020,world-championship-itt-we,2020,World Championships ITT (women),women,championship_itt,1.Pro,2020-09-14,2020-09-14
+world-championship-we/2020,world-championship-we,2020,World Championships road race (women),women,championship,1.Pro,2020-09-15,2020-09-15
+world-championship-itt/2020,world-championship-itt,2020,World Championships ITT,men,championship_itt,1.Pro,2020-09-17,2020-09-17
+coppa-sabatini/2020,coppa-sabatini,2020,Coppa Sabatini,men,one_day,1.Pro,2020-09-20,2020-09-20
+gp-montreal/2020,gp-montreal,2020,GP de Montréal,men,one_day,1.UWT,2020-09-21,2020-09-21
+tour-de-luxembourg/2020,tour-de-luxembourg,2020,Tour de Luxembourg,men,stage_race,2.Pro,2020-09-21,2020-09-25
+tre-valli-varesine/2020,tre-valli-varesine,2020,Tre Valli Varesine,men,one_day,1.Pro,2020-10-01,2020-10-01
+giro-del-veneto/2020,giro-del-veneto,2020,Giro del Veneto,men,one_day,1.Pro,2020-10-01,2020-10-01
+japan-cup/2020,japan-cup,2020,Japan Cup,men,one_day,1.Pro,2020-10-02,2020-10-02
+tour-of-guangxi/2020,tour-of-guangxi,2020,Tour of Guangxi,men,stage_race,2.UWT,2020-10-02,2020-10-06
+giro-dell-emilia/2020,giro-dell-emilia,2020,Giro dell'Emilia,men,one_day,1.Pro,2020-10-06,2020-10-06
+uec-road-european-championships-itt-we/2020,uec-road-european-championships-itt-we,2020,European Championships ITT (women),women,championship_itt,1.Pro,2020-10-09,2020-10-09
+coppa-bernocchi/2020,coppa-bernocchi,2020,Coppa Bernocchi,men,one_day,1.Pro,2020-10-10,2020-10-10
+il-lombardia/2020,il-lombardia,2020,Il Lombardia,men,one_day,1.UWT,2020-10-14,2020-10-14
+sparkassen-munsterland-giro/2020,sparkassen-munsterland-giro,2020,Münsterland Giro,men,one_day,1.Pro,2020-10-15,2020-10-15
+uec-road-european-championships-itt/2020,uec-road-european-championships-itt,2020,European Championships ITT,men,championship_itt,1.Pro,2020-10-15,2020-10-15
+uec-road-european-championships-we/2020,uec-road-european-championships-we,2020,European Championships road race (women),women,championship,1.Pro,2020-10-18,2020-10-18
+uec-road-european-championships/2020,uec-road-european-championships,2020,European Championships road race,men,championship,1.Pro,2020-10-19,2020-10-19
+gran-piemonte/2020,gran-piemonte,2020,Gran Piemonte,men,one_day,1.Pro,2020-10-20,2020-10-20
+paris-tours/2020,paris-tours,2020,Paris-Tours,men,one_day,1.Pro,2020-10-20,2020-10-20
+veneto-classic/2020,veneto-classic,2020,Veneto Classic,men,one_day,1.Pro,2020-10-21,2020-10-21
+tour-down-under/2021,tour-down-under,2021,Santos Tour Down Under,men,stage_race,2.UWT,2021-01-03,2021-01-08
+figueira-champions-classic/2021,figueira-champions-classic,2021,Figueira Champions Classic,men,one_day,1.Pro,2021-02-02,2021-02-02
+uae-tour/2021,uae-tour,2021,UAE Tour,men,stage_race,2.UWT,2021-02-03,2021-02-09
+tour-of-oman/2021,tour-of-oman,2021,Tour of Oman,men,stage_race,2.Pro,2021-02-04,2021-02-08
+clasica-de-almeria/2021,clasica-de-almeria,2021,Clásica de Almería,men,one_day,1.Pro,2021-02-07,2021-02-07
+cadel-evans-great-ocean-road-race/2021,cadel-evans-great-ocean-road-race,2021,Cadel Evans Great Ocean Road Race,men,one_day,1.UWT,2021-02-09,2021-02-09
+volta-ao-algarve/2021,volta-ao-algarve,2021,Volta ao Algarve,men,stage_race,2.Pro,2021-02-09,2021-02-13
+vuelta-a-andalucia/2021,vuelta-a-andalucia,2021,Vuelta a Andalucía,men,stage_race,2.Pro,2021-02-12,2021-02-16
+volta-a-la-comunitat-valenciana/2021,volta-a-la-comunitat-valenciana,2021,Volta a la Comunitat Valenciana,men,stage_race,2.Pro,2021-02-15,2021-02-19
+tour-de-la-provence/2021,tour-de-la-provence,2021,Tour de la Provence,men,stage_race,2.Pro,2021-02-19,2021-02-23
+faun-ardeche-classic/2021,faun-ardeche-classic,2021,Faun-Ardèche Classic,men,one_day,1.Pro,2021-03-01,2021-03-01
+strade-bianche/2021,strade-bianche,2021,Strade Bianche,men,one_day,1.UWT,2021-03-03,2021-03-03
+tirreno-adriatico/2021,tirreno-adriatico,2021,Tirreno-Adriatico,men,stage_race,2.UWT,2021-03-04,2021-03-10
+milano-sanremo/2021,milano-sanremo,2021,Milano-Sanremo,men,one_day,1.UWT,2021-03-04,2021-03-04
+dwars-door-vlaanderen/2021,dwars-door-vlaanderen,2021,Dwars door Vlaanderen,men,one_day,1.UWT,2021-03-05,2021-03-05
+trofeo-laigueglia/2021,trofeo-laigueglia,2021,Trofeo Laigueglia,men,one_day,1.Pro,2021-03-06,2021-03-06
+kuurne-brussel-kuurne/2021,kuurne-brussel-kuurne,2021,Kuurne-Brussel-Kuurne,men,one_day,1.Pro,2021-03-08,2021-03-08
+e3-harelbeke/2021,e3-harelbeke,2021,E3 Saxo Classic,men,one_day,1.UWT,2021-03-10,2021-03-10
+la-drome-classic/2021,la-drome-classic,2021,La Drôme Classic,men,one_day,1.Pro,2021-03-12,2021-03-12
+nokere-koerse/2021,nokere-koerse,2021,Nokere Koerse,men,one_day,1.Pro,2021-03-12,2021-03-12
+volta-a-catalunya/2021,volta-a-catalunya,2021,Volta a Catalunya,men,stage_race,2.UWT,2021-03-13,2021-03-19
+gent-wevelgem/2021,gent-wevelgem,2021,Gent-Wevelgem,men,one_day,1.UWT,2021-03-13,2021-03-13
+omloop-het-nieuwsblad/2021,omloop-het-nieuwsblad,2021,Omloop Het Nieuwsblad,men,one_day,1.UWT,2021-03-17,2021-03-17
+gp-de-denain/2021,gp-de-denain,2021,GP de Denain,men,one_day,1.Pro,2021-03-18,2021-03-18
+bredene-koksijde-classic/2021,bredene-koksijde-classic,2021,Bredene Koksijde Classic,men,one_day,1.Pro,2021-03-18,2021-03-18
+classic-brugge-de-panne/2021,classic-brugge-de-panne,2021,Classic Brugge-De Panne,men,one_day,1.UWT,2021-03-19,2021-03-19
+paris-nice/2021,paris-nice,2021,Paris-Nice,men,stage_race,2.UWT,2021-03-20,2021-03-27
+milano-torino/2021,milano-torino,2021,Milano-Torino,men,one_day,1.Pro,2021-03-21,2021-03-21
+itzulia-basque-country/2021,itzulia-basque-country,2021,Itzulia Basque Country,men,stage_race,2.UWT,2021-04-01,2021-04-06
+amstel-gold-race/2021,amstel-gold-race,2021,Amstel Gold Race,men,one_day,1.UWT,2021-04-09,2021-04-09
+ronde-van-vlaanderen/2021,ronde-van-vlaanderen,2021,Ronde van Vlaanderen,men,one_day,1.UWT,2021-04-12,2021-04-12
+la-fleche-wallone/2021,la-fleche-wallone,2021,La Flèche Wallonne,men,one_day,1.UWT,2021-04-12,2021-04-12
+tour-of-the-alps/2021,tour-of-the-alps,2021,Tour of the Alps,men,stage_race,2.Pro,2021-04-13,2021-04-17
+liege-bastogne-liege/2021,liege-bastogne-liege,2021,Liège-Bastogne-Liège,men,one_day,1.UWT,2021-04-16,2021-04-16
+brabantse-pijl/2021,brabantse-pijl,2021,Brabantse Pijl,men,one_day,1.Pro,2021-04-17,2021-04-17
+tour-de-romandie/2021,tour-de-romandie,2021,Tour de Romandie,men,stage_race,2.UWT,2021-04-18,2021-04-23
+gp-miguel-indurain/2021,gp-miguel-indurain,2021,GP Miguel Induráin,men,one_day,1.Pro,2021-04-19,2021-04-19
+scheldeprijs/2021,scheldeprijs,2021,Scheldeprijs,men,one_day,1.Pro,2021-04-19,2021-04-19
+paris-roubaix/2021,paris-roubaix,2021,Paris-Roubaix,men,one_day,1.UWT,2021-04-20,2021-04-20
+giro-d-italia/2021,giro-d-italia,2021,Giro d'Italia,men,stage_race,2.UWT,2021-05-04,2021-05-26
+boucles-de-la-mayenne/2021,boucles-de-la-mayenne,2021,Boucles de la Mayenne,men,stage_race,2.Pro,2021-05-06,2021-05-10
+tro-bro-leon/2021,tro-bro-leon,2021,Tro Bro Leon,men,one_day,1.Pro,2021-05-09,2021-05-09
+4-jours-de-dunkerque/2021,4-jours-de-dunkerque,2021,Quatre Jours de Dunkerque,men,stage_race,2.Pro,2021-05-09,2021-05-13
+tour-of-norway/2021,tour-of-norway,2021,Tour of Norway,men,stage_race,2.Pro,2021-05-14,2021-05-18
+eschborn-frankfurt/2021,eschborn-frankfurt,2021,Eschborn-Frankfurt,men,one_day,1.UWT,2021-05-16,2021-05-16
+tour-de-hongrie/2021,tour-de-hongrie,2021,Tour de Hongrie,men,stage_race,2.Pro,2021-05-19,2021-05-23
+classique-dunkerque/2021,classique-dunkerque,2021,Classique Dunkerque,men,one_day,1.Pro,2021-05-20,2021-05-20
+gp-du-morbihan/2021,gp-du-morbihan,2021,Grand Prix du Morbihan,men,one_day,1.Pro,2021-05-21,2021-05-21
+mont-ventoux-denivele-challenge/2021,mont-ventoux-denivele-challenge,2021,Mont Ventoux Dénivelé Challenge,men,one_day,1.Pro,2021-06-01,2021-06-01
+brussels-cycling-classic/2021,brussels-cycling-classic,2021,Brussels Cycling Classic,men,one_day,1.Pro,2021-06-05,2021-06-05
+baloise-belgium-tour/2021,baloise-belgium-tour,2021,Baloise Belgium Tour,men,stage_race,2.Pro,2021-06-05,2021-06-09
+copenhagen-sprint/2021,copenhagen-sprint,2021,Copenhagen Sprint,men,one_day,1.UWT,2021-06-05,2021-06-05
+dwars-door-het-hageland/2021,dwars-door-het-hageland,2021,Dwars door het Hageland,men,one_day,1.Pro,2021-06-06,2021-06-06
+tour-de-suisse/2021,tour-de-suisse,2021,Tour de Suisse,men,stage_race,2.UWT,2021-06-10,2021-06-17
+dauphine/2021,dauphine,2021,Tour Auvergne-Rhône-Alpes (Dauphiné),men,stage_race,2.UWT,2021-06-13,2021-06-20
+tour-of-slovenia/2021,tour-of-slovenia,2021,Tour of Slovenia,men,stage_race,2.Pro,2021-06-20,2021-06-24
+tour-de-wallonie/2021,tour-de-wallonie,2021,Tour de Wallonie,men,stage_race,2.Pro,2021-07-05,2021-07-09
+tour-de-france/2021,tour-de-france,2021,Tour de France,men,stage_race,2.UWT,2021-07-20,2021-08-11
+benelux-tour/2021,benelux-tour,2021,Renewi Tour,men,stage_race,2.UWT,2021-08-01,2021-08-05
+bretagne-classic/2021,bretagne-classic,2021,Bretagne Classic,men,one_day,1.UWT,2021-08-02,2021-08-02
+tour-de-france-femmes/2021,tour-de-france-femmes,2021,Tour de France Femmes,women,stage_race,2.UWT,2021-08-03,2021-08-10
+vuelta-a-burgos/2021,vuelta-a-burgos,2021,Vuelta a Burgos,men,stage_race,2.Pro,2021-08-05,2021-08-09
+danmark-rundt/2021,danmark-rundt,2021,Danmark Rundt,men,stage_race,2.Pro,2021-08-07,2021-08-11
+vuelta-a-espana/2021,vuelta-a-espana,2021,Vuelta a España,men,stage_race,2.UWT,2021-08-07,2021-08-29
+san-sebastian/2021,san-sebastian,2021,Clásica San Sebastián,men,one_day,1.UWT,2021-08-08,2021-08-08
+arctic-race-of-norway/2021,arctic-race-of-norway,2021,Arctic Race of Norway,men,stage_race,2.Pro,2021-08-08,2021-08-12
+deutschland-tour/2021,deutschland-tour,2021,Deutschland Tour,men,stage_race,2.Pro,2021-08-09,2021-08-13
+circuit-franco-belge/2021,circuit-franco-belge,2021,Circuit Franco-Belge,men,stage_race,2.Pro,2021-08-09,2021-08-13
+tour-de-pologne/2021,tour-de-pologne,2021,Tour de Pologne,men,stage_race,2.UWT,2021-08-10,2021-08-16
+cyclassics-hamburg/2021,cyclassics-hamburg,2021,Cyclassics Hamburg,men,one_day,1.UWT,2021-08-20,2021-08-20
+maryland-cycling-classic/2021,maryland-cycling-classic,2021,Maryland Cycling Classic,men,one_day,1.Pro,2021-09-02,2021-09-02
+gp-industria-artigianato-di-larciano/2021,gp-industria-artigianato-di-larciano,2021,GP Industria & Artigianato,men,one_day,1.Pro,2021-09-04,2021-09-04
+gp-de-fourmies/2021,gp-de-fourmies,2021,GP de Fourmies,men,one_day,1.Pro,2021-09-07,2021-09-07
+super-8-classic/2021,super-8-classic,2021,Super 8 Classic,men,one_day,1.Pro,2021-09-07,2021-09-07
+world-championship/2021,world-championship,2021,World Championships road race,men,championship,1.Pro,2021-09-08,2021-09-08
+tour-of-britain/2021,tour-of-britain,2021,Tour of Britain,men,stage_race,2.Pro,2021-09-10,2021-09-14
+gp-quebec/2021,gp-quebec,2021,GP de Québec,men,one_day,1.UWT,2021-09-10,2021-09-10
+gp-de-wallonie/2021,gp-de-wallonie,2021,GP de Wallonie,men,one_day,1.Pro,2021-09-10,2021-09-10
+world-championship-itt-we/2021,world-championship-itt-we,2021,World Championships ITT (women),women,championship_itt,1.Pro,2021-09-14,2021-09-14
+world-championship-we/2021,world-championship-we,2021,World Championships road race (women),women,championship,1.Pro,2021-09-15,2021-09-15
+world-championship-itt/2021,world-championship-itt,2021,World Championships ITT,men,championship_itt,1.Pro,2021-09-17,2021-09-17
+coppa-sabatini/2021,coppa-sabatini,2021,Coppa Sabatini,men,one_day,1.Pro,2021-09-20,2021-09-20
+gp-montreal/2021,gp-montreal,2021,GP de Montréal,men,one_day,1.UWT,2021-09-21,2021-09-21
+tour-de-luxembourg/2021,tour-de-luxembourg,2021,Tour de Luxembourg,men,stage_race,2.Pro,2021-09-21,2021-09-25
+tre-valli-varesine/2021,tre-valli-varesine,2021,Tre Valli Varesine,men,one_day,1.Pro,2021-10-01,2021-10-01
+giro-del-veneto/2021,giro-del-veneto,2021,Giro del Veneto,men,one_day,1.Pro,2021-10-01,2021-10-01
+japan-cup/2021,japan-cup,2021,Japan Cup,men,one_day,1.Pro,2021-10-02,2021-10-02
+tour-of-guangxi/2021,tour-of-guangxi,2021,Tour of Guangxi,men,stage_race,2.UWT,2021-10-02,2021-10-06
+giro-dell-emilia/2021,giro-dell-emilia,2021,Giro dell'Emilia,men,one_day,1.Pro,2021-10-06,2021-10-06
+uec-road-european-championships-itt-we/2021,uec-road-european-championships-itt-we,2021,European Championships ITT (women),women,championship_itt,1.Pro,2021-10-09,2021-10-09
+coppa-bernocchi/2021,coppa-bernocchi,2021,Coppa Bernocchi,men,one_day,1.Pro,2021-10-10,2021-10-10
+il-lombardia/2021,il-lombardia,2021,Il Lombardia,men,one_day,1.UWT,2021-10-14,2021-10-14
+sparkassen-munsterland-giro/2021,sparkassen-munsterland-giro,2021,Münsterland Giro,men,one_day,1.Pro,2021-10-15,2021-10-15
+uec-road-european-championships-itt/2021,uec-road-european-championships-itt,2021,European Championships ITT,men,championship_itt,1.Pro,2021-10-15,2021-10-15
+uec-road-european-championships-we/2021,uec-road-european-championships-we,2021,European Championships road race (women),women,championship,1.Pro,2021-10-18,2021-10-18
+uec-road-european-championships/2021,uec-road-european-championships,2021,European Championships road race,men,championship,1.Pro,2021-10-19,2021-10-19
+gran-piemonte/2021,gran-piemonte,2021,Gran Piemonte,men,one_day,1.Pro,2021-10-20,2021-10-20
+paris-tours/2021,paris-tours,2021,Paris-Tours,men,one_day,1.Pro,2021-10-20,2021-10-20
+veneto-classic/2021,veneto-classic,2021,Veneto Classic,men,one_day,1.Pro,2021-10-21,2021-10-21
+tour-down-under/2022,tour-down-under,2022,Santos Tour Down Under,men,stage_race,2.UWT,2022-01-03,2022-01-08
+figueira-champions-classic/2022,figueira-champions-classic,2022,Figueira Champions Classic,men,one_day,1.Pro,2022-02-02,2022-02-02
+uae-tour/2022,uae-tour,2022,UAE Tour,men,stage_race,2.UWT,2022-02-03,2022-02-09
+tour-of-oman/2022,tour-of-oman,2022,Tour of Oman,men,stage_race,2.Pro,2022-02-04,2022-02-08
+clasica-de-almeria/2022,clasica-de-almeria,2022,Clásica de Almería,men,one_day,1.Pro,2022-02-07,2022-02-07
+cadel-evans-great-ocean-road-race/2022,cadel-evans-great-ocean-road-race,2022,Cadel Evans Great Ocean Road Race,men,one_day,1.UWT,2022-02-09,2022-02-09
+volta-ao-algarve/2022,volta-ao-algarve,2022,Volta ao Algarve,men,stage_race,2.Pro,2022-02-09,2022-02-13
+vuelta-a-andalucia/2022,vuelta-a-andalucia,2022,Vuelta a Andalucía,men,stage_race,2.Pro,2022-02-12,2022-02-16
+volta-a-la-comunitat-valenciana/2022,volta-a-la-comunitat-valenciana,2022,Volta a la Comunitat Valenciana,men,stage_race,2.Pro,2022-02-15,2022-02-19
+tour-de-la-provence/2022,tour-de-la-provence,2022,Tour de la Provence,men,stage_race,2.Pro,2022-02-19,2022-02-23
+faun-ardeche-classic/2022,faun-ardeche-classic,2022,Faun-Ardèche Classic,men,one_day,1.Pro,2022-03-01,2022-03-01
+strade-bianche/2022,strade-bianche,2022,Strade Bianche,men,one_day,1.UWT,2022-03-03,2022-03-03
+tirreno-adriatico/2022,tirreno-adriatico,2022,Tirreno-Adriatico,men,stage_race,2.UWT,2022-03-04,2022-03-10
+milano-sanremo/2022,milano-sanremo,2022,Milano-Sanremo,men,one_day,1.UWT,2022-03-04,2022-03-04
+dwars-door-vlaanderen/2022,dwars-door-vlaanderen,2022,Dwars door Vlaanderen,men,one_day,1.UWT,2022-03-05,2022-03-05
+trofeo-laigueglia/2022,trofeo-laigueglia,2022,Trofeo Laigueglia,men,one_day,1.Pro,2022-03-06,2022-03-06
+kuurne-brussel-kuurne/2022,kuurne-brussel-kuurne,2022,Kuurne-Brussel-Kuurne,men,one_day,1.Pro,2022-03-08,2022-03-08
+e3-harelbeke/2022,e3-harelbeke,2022,E3 Saxo Classic,men,one_day,1.UWT,2022-03-10,2022-03-10
+la-drome-classic/2022,la-drome-classic,2022,La Drôme Classic,men,one_day,1.Pro,2022-03-12,2022-03-12
+nokere-koerse/2022,nokere-koerse,2022,Nokere Koerse,men,one_day,1.Pro,2022-03-12,2022-03-12
+volta-a-catalunya/2022,volta-a-catalunya,2022,Volta a Catalunya,men,stage_race,2.UWT,2022-03-13,2022-03-19
+gent-wevelgem/2022,gent-wevelgem,2022,Gent-Wevelgem,men,one_day,1.UWT,2022-03-13,2022-03-13
+omloop-het-nieuwsblad/2022,omloop-het-nieuwsblad,2022,Omloop Het Nieuwsblad,men,one_day,1.UWT,2022-03-17,2022-03-17
+gp-de-denain/2022,gp-de-denain,2022,GP de Denain,men,one_day,1.Pro,2022-03-18,2022-03-18
+bredene-koksijde-classic/2022,bredene-koksijde-classic,2022,Bredene Koksijde Classic,men,one_day,1.Pro,2022-03-18,2022-03-18
+classic-brugge-de-panne/2022,classic-brugge-de-panne,2022,Classic Brugge-De Panne,men,one_day,1.UWT,2022-03-19,2022-03-19
+paris-nice/2022,paris-nice,2022,Paris-Nice,men,stage_race,2.UWT,2022-03-20,2022-03-27
+milano-torino/2022,milano-torino,2022,Milano-Torino,men,one_day,1.Pro,2022-03-21,2022-03-21
+itzulia-basque-country/2022,itzulia-basque-country,2022,Itzulia Basque Country,men,stage_race,2.UWT,2022-04-01,2022-04-06
+amstel-gold-race/2022,amstel-gold-race,2022,Amstel Gold Race,men,one_day,1.UWT,2022-04-09,2022-04-09
+ronde-van-vlaanderen/2022,ronde-van-vlaanderen,2022,Ronde van Vlaanderen,men,one_day,1.UWT,2022-04-12,2022-04-12
+la-fleche-wallone/2022,la-fleche-wallone,2022,La Flèche Wallonne,men,one_day,1.UWT,2022-04-12,2022-04-12
+tour-of-the-alps/2022,tour-of-the-alps,2022,Tour of the Alps,men,stage_race,2.Pro,2022-04-13,2022-04-17
+liege-bastogne-liege/2022,liege-bastogne-liege,2022,Liège-Bastogne-Liège,men,one_day,1.UWT,2022-04-16,2022-04-16
+brabantse-pijl/2022,brabantse-pijl,2022,Brabantse Pijl,men,one_day,1.Pro,2022-04-17,2022-04-17
+tour-de-romandie/2022,tour-de-romandie,2022,Tour de Romandie,men,stage_race,2.UWT,2022-04-18,2022-04-23
+gp-miguel-indurain/2022,gp-miguel-indurain,2022,GP Miguel Induráin,men,one_day,1.Pro,2022-04-19,2022-04-19
+scheldeprijs/2022,scheldeprijs,2022,Scheldeprijs,men,one_day,1.Pro,2022-04-19,2022-04-19
+paris-roubaix/2022,paris-roubaix,2022,Paris-Roubaix,men,one_day,1.UWT,2022-04-20,2022-04-20
+giro-d-italia/2022,giro-d-italia,2022,Giro d'Italia,men,stage_race,2.UWT,2022-05-04,2022-05-26
+boucles-de-la-mayenne/2022,boucles-de-la-mayenne,2022,Boucles de la Mayenne,men,stage_race,2.Pro,2022-05-06,2022-05-10
+tro-bro-leon/2022,tro-bro-leon,2022,Tro Bro Leon,men,one_day,1.Pro,2022-05-09,2022-05-09
+4-jours-de-dunkerque/2022,4-jours-de-dunkerque,2022,Quatre Jours de Dunkerque,men,stage_race,2.Pro,2022-05-09,2022-05-13
+tour-of-norway/2022,tour-of-norway,2022,Tour of Norway,men,stage_race,2.Pro,2022-05-14,2022-05-18
+eschborn-frankfurt/2022,eschborn-frankfurt,2022,Eschborn-Frankfurt,men,one_day,1.UWT,2022-05-16,2022-05-16
+tour-de-hongrie/2022,tour-de-hongrie,2022,Tour de Hongrie,men,stage_race,2.Pro,2022-05-19,2022-05-23
+classique-dunkerque/2022,classique-dunkerque,2022,Classique Dunkerque,men,one_day,1.Pro,2022-05-20,2022-05-20
+gp-du-morbihan/2022,gp-du-morbihan,2022,Grand Prix du Morbihan,men,one_day,1.Pro,2022-05-21,2022-05-21
+mont-ventoux-denivele-challenge/2022,mont-ventoux-denivele-challenge,2022,Mont Ventoux Dénivelé Challenge,men,one_day,1.Pro,2022-06-01,2022-06-01
+brussels-cycling-classic/2022,brussels-cycling-classic,2022,Brussels Cycling Classic,men,one_day,1.Pro,2022-06-05,2022-06-05
+baloise-belgium-tour/2022,baloise-belgium-tour,2022,Baloise Belgium Tour,men,stage_race,2.Pro,2022-06-05,2022-06-09
+copenhagen-sprint/2022,copenhagen-sprint,2022,Copenhagen Sprint,men,one_day,1.UWT,2022-06-05,2022-06-05
+dwars-door-het-hageland/2022,dwars-door-het-hageland,2022,Dwars door het Hageland,men,one_day,1.Pro,2022-06-06,2022-06-06
+tour-de-suisse/2022,tour-de-suisse,2022,Tour de Suisse,men,stage_race,2.UWT,2022-06-10,2022-06-17
+dauphine/2022,dauphine,2022,Tour Auvergne-Rhône-Alpes (Dauphiné),men,stage_race,2.UWT,2022-06-13,2022-06-20
+tour-of-slovenia/2022,tour-of-slovenia,2022,Tour of Slovenia,men,stage_race,2.Pro,2022-06-20,2022-06-24
+tour-de-wallonie/2022,tour-de-wallonie,2022,Tour de Wallonie,men,stage_race,2.Pro,2022-07-05,2022-07-09
+tour-de-france/2022,tour-de-france,2022,Tour de France,men,stage_race,2.UWT,2022-07-20,2022-08-11
+benelux-tour/2022,benelux-tour,2022,Renewi Tour,men,stage_race,2.UWT,2022-08-01,2022-08-05
+bretagne-classic/2022,bretagne-classic,2022,Bretagne Classic,men,one_day,1.UWT,2022-08-02,2022-08-02
+tour-de-france-femmes/2022,tour-de-france-femmes,2022,Tour de France Femmes,women,stage_race,2.UWT,2022-08-03,2022-08-10
+vuelta-a-burgos/2022,vuelta-a-burgos,2022,Vuelta a Burgos,men,stage_race,2.Pro,2022-08-05,2022-08-09
+danmark-rundt/2022,danmark-rundt,2022,Danmark Rundt,men,stage_race,2.Pro,2022-08-07,2022-08-11
+vuelta-a-espana/2022,vuelta-a-espana,2022,Vuelta a España,men,stage_race,2.UWT,2022-08-07,2022-08-29
+san-sebastian/2022,san-sebastian,2022,Clásica San Sebastián,men,one_day,1.UWT,2022-08-08,2022-08-08
+arctic-race-of-norway/2022,arctic-race-of-norway,2022,Arctic Race of Norway,men,stage_race,2.Pro,2022-08-08,2022-08-12
+deutschland-tour/2022,deutschland-tour,2022,Deutschland Tour,men,stage_race,2.Pro,2022-08-09,2022-08-13
+circuit-franco-belge/2022,circuit-franco-belge,2022,Circuit Franco-Belge,men,stage_race,2.Pro,2022-08-09,2022-08-13
+tour-de-pologne/2022,tour-de-pologne,2022,Tour de Pologne,men,stage_race,2.UWT,2022-08-10,2022-08-16
+cyclassics-hamburg/2022,cyclassics-hamburg,2022,Cyclassics Hamburg,men,one_day,1.UWT,2022-08-20,2022-08-20
+maryland-cycling-classic/2022,maryland-cycling-classic,2022,Maryland Cycling Classic,men,one_day,1.Pro,2022-09-02,2022-09-02
+gp-industria-artigianato-di-larciano/2022,gp-industria-artigianato-di-larciano,2022,GP Industria & Artigianato,men,one_day,1.Pro,2022-09-04,2022-09-04
+gp-de-fourmies/2022,gp-de-fourmies,2022,GP de Fourmies,men,one_day,1.Pro,2022-09-07,2022-09-07
+super-8-classic/2022,super-8-classic,2022,Super 8 Classic,men,one_day,1.Pro,2022-09-07,2022-09-07
+world-championship/2022,world-championship,2022,World Championships road race,men,championship,1.Pro,2022-09-08,2022-09-08
+tour-of-britain/2022,tour-of-britain,2022,Tour of Britain,men,stage_race,2.Pro,2022-09-10,2022-09-14
+gp-quebec/2022,gp-quebec,2022,GP de Québec,men,one_day,1.UWT,2022-09-10,2022-09-10
+gp-de-wallonie/2022,gp-de-wallonie,2022,GP de Wallonie,men,one_day,1.Pro,2022-09-10,2022-09-10
+world-championship-itt-we/2022,world-championship-itt-we,2022,World Championships ITT (women),women,championship_itt,1.Pro,2022-09-14,2022-09-14
+world-championship-we/2022,world-championship-we,2022,World Championships road race (women),women,championship,1.Pro,2022-09-15,2022-09-15
+world-championship-itt/2022,world-championship-itt,2022,World Championships ITT,men,championship_itt,1.Pro,2022-09-17,2022-09-17
+coppa-sabatini/2022,coppa-sabatini,2022,Coppa Sabatini,men,one_day,1.Pro,2022-09-20,2022-09-20
+gp-montreal/2022,gp-montreal,2022,GP de Montréal,men,one_day,1.UWT,2022-09-21,2022-09-21
+tour-de-luxembourg/2022,tour-de-luxembourg,2022,Tour de Luxembourg,men,stage_race,2.Pro,2022-09-21,2022-09-25
+tre-valli-varesine/2022,tre-valli-varesine,2022,Tre Valli Varesine,men,one_day,1.Pro,2022-10-01,2022-10-01
+giro-del-veneto/2022,giro-del-veneto,2022,Giro del Veneto,men,one_day,1.Pro,2022-10-01,2022-10-01
+japan-cup/2022,japan-cup,2022,Japan Cup,men,one_day,1.Pro,2022-10-02,2022-10-02
+tour-of-guangxi/2022,tour-of-guangxi,2022,Tour of Guangxi,men,stage_race,2.UWT,2022-10-02,2022-10-06
+giro-dell-emilia/2022,giro-dell-emilia,2022,Giro dell'Emilia,men,one_day,1.Pro,2022-10-06,2022-10-06
+uec-road-european-championships-itt-we/2022,uec-road-european-championships-itt-we,2022,European Championships ITT (women),women,championship_itt,1.Pro,2022-10-09,2022-10-09
+coppa-bernocchi/2022,coppa-bernocchi,2022,Coppa Bernocchi,men,one_day,1.Pro,2022-10-10,2022-10-10
+il-lombardia/2022,il-lombardia,2022,Il Lombardia,men,one_day,1.UWT,2022-10-14,2022-10-14
+sparkassen-munsterland-giro/2022,sparkassen-munsterland-giro,2022,Münsterland Giro,men,one_day,1.Pro,2022-10-15,2022-10-15
+uec-road-european-championships-itt/2022,uec-road-european-championships-itt,2022,European Championships ITT,men,championship_itt,1.Pro,2022-10-15,2022-10-15
+uec-road-european-championships-we/2022,uec-road-european-championships-we,2022,European Championships road race (women),women,championship,1.Pro,2022-10-18,2022-10-18
+uec-road-european-championships/2022,uec-road-european-championships,2022,European Championships road race,men,championship,1.Pro,2022-10-19,2022-10-19
+gran-piemonte/2022,gran-piemonte,2022,Gran Piemonte,men,one_day,1.Pro,2022-10-20,2022-10-20
+paris-tours/2022,paris-tours,2022,Paris-Tours,men,one_day,1.Pro,2022-10-20,2022-10-20
+veneto-classic/2022,veneto-classic,2022,Veneto Classic,men,one_day,1.Pro,2022-10-21,2022-10-21
+tour-down-under/2023,tour-down-under,2023,Santos Tour Down Under,men,stage_race,2.UWT,2023-01-03,2023-01-08
+figueira-champions-classic/2023,figueira-champions-classic,2023,Figueira Champions Classic,men,one_day,1.Pro,2023-02-02,2023-02-02
+uae-tour/2023,uae-tour,2023,UAE Tour,men,stage_race,2.UWT,2023-02-03,2023-02-09
+tour-of-oman/2023,tour-of-oman,2023,Tour of Oman,men,stage_race,2.Pro,2023-02-04,2023-02-08
+clasica-de-almeria/2023,clasica-de-almeria,2023,Clásica de Almería,men,one_day,1.Pro,2023-02-07,2023-02-07
+cadel-evans-great-ocean-road-race/2023,cadel-evans-great-ocean-road-race,2023,Cadel Evans Great Ocean Road Race,men,one_day,1.UWT,2023-02-09,2023-02-09
+volta-ao-algarve/2023,volta-ao-algarve,2023,Volta ao Algarve,men,stage_race,2.Pro,2023-02-09,2023-02-13
+vuelta-a-andalucia/2023,vuelta-a-andalucia,2023,Vuelta a Andalucía,men,stage_race,2.Pro,2023-02-12,2023-02-16
+volta-a-la-comunitat-valenciana/2023,volta-a-la-comunitat-valenciana,2023,Volta a la Comunitat Valenciana,men,stage_race,2.Pro,2023-02-15,2023-02-19
+tour-de-la-provence/2023,tour-de-la-provence,2023,Tour de la Provence,men,stage_race,2.Pro,2023-02-19,2023-02-23
+faun-ardeche-classic/2023,faun-ardeche-classic,2023,Faun-Ardèche Classic,men,one_day,1.Pro,2023-03-01,2023-03-01
+strade-bianche/2023,strade-bianche,2023,Strade Bianche,men,one_day,1.UWT,2023-03-03,2023-03-03
+tirreno-adriatico/2023,tirreno-adriatico,2023,Tirreno-Adriatico,men,stage_race,2.UWT,2023-03-04,2023-03-10
+milano-sanremo/2023,milano-sanremo,2023,Milano-Sanremo,men,one_day,1.UWT,2023-03-04,2023-03-04
+dwars-door-vlaanderen/2023,dwars-door-vlaanderen,2023,Dwars door Vlaanderen,men,one_day,1.UWT,2023-03-05,2023-03-05
+trofeo-laigueglia/2023,trofeo-laigueglia,2023,Trofeo Laigueglia,men,one_day,1.Pro,2023-03-06,2023-03-06
+kuurne-brussel-kuurne/2023,kuurne-brussel-kuurne,2023,Kuurne-Brussel-Kuurne,men,one_day,1.Pro,2023-03-08,2023-03-08
+e3-harelbeke/2023,e3-harelbeke,2023,E3 Saxo Classic,men,one_day,1.UWT,2023-03-10,2023-03-10
+la-drome-classic/2023,la-drome-classic,2023,La Drôme Classic,men,one_day,1.Pro,2023-03-12,2023-03-12
+nokere-koerse/2023,nokere-koerse,2023,Nokere Koerse,men,one_day,1.Pro,2023-03-12,2023-03-12
+volta-a-catalunya/2023,volta-a-catalunya,2023,Volta a Catalunya,men,stage_race,2.UWT,2023-03-13,2023-03-19
+gent-wevelgem/2023,gent-wevelgem,2023,Gent-Wevelgem,men,one_day,1.UWT,2023-03-13,2023-03-13
+omloop-het-nieuwsblad/2023,omloop-het-nieuwsblad,2023,Omloop Het Nieuwsblad,men,one_day,1.UWT,2023-03-17,2023-03-17
+gp-de-denain/2023,gp-de-denain,2023,GP de Denain,men,one_day,1.Pro,2023-03-18,2023-03-18
+bredene-koksijde-classic/2023,bredene-koksijde-classic,2023,Bredene Koksijde Classic,men,one_day,1.Pro,2023-03-18,2023-03-18
+classic-brugge-de-panne/2023,classic-brugge-de-panne,2023,Classic Brugge-De Panne,men,one_day,1.UWT,2023-03-19,2023-03-19
+paris-nice/2023,paris-nice,2023,Paris-Nice,men,stage_race,2.UWT,2023-03-20,2023-03-27
+milano-torino/2023,milano-torino,2023,Milano-Torino,men,one_day,1.Pro,2023-03-21,2023-03-21
+itzulia-basque-country/2023,itzulia-basque-country,2023,Itzulia Basque Country,men,stage_race,2.UWT,2023-04-01,2023-04-06
+amstel-gold-race/2023,amstel-gold-race,2023,Amstel Gold Race,men,one_day,1.UWT,2023-04-09,2023-04-09
+ronde-van-vlaanderen/2023,ronde-van-vlaanderen,2023,Ronde van Vlaanderen,men,one_day,1.UWT,2023-04-12,2023-04-12
+la-fleche-wallone/2023,la-fleche-wallone,2023,La Flèche Wallonne,men,one_day,1.UWT,2023-04-12,2023-04-12
+tour-of-the-alps/2023,tour-of-the-alps,2023,Tour of the Alps,men,stage_race,2.Pro,2023-04-13,2023-04-17
+liege-bastogne-liege/2023,liege-bastogne-liege,2023,Liège-Bastogne-Liège,men,one_day,1.UWT,2023-04-16,2023-04-16
+brabantse-pijl/2023,brabantse-pijl,2023,Brabantse Pijl,men,one_day,1.Pro,2023-04-17,2023-04-17
+tour-de-romandie/2023,tour-de-romandie,2023,Tour de Romandie,men,stage_race,2.UWT,2023-04-18,2023-04-23
+gp-miguel-indurain/2023,gp-miguel-indurain,2023,GP Miguel Induráin,men,one_day,1.Pro,2023-04-19,2023-04-19
+scheldeprijs/2023,scheldeprijs,2023,Scheldeprijs,men,one_day,1.Pro,2023-04-19,2023-04-19
+paris-roubaix/2023,paris-roubaix,2023,Paris-Roubaix,men,one_day,1.UWT,2023-04-20,2023-04-20
+giro-d-italia/2023,giro-d-italia,2023,Giro d'Italia,men,stage_race,2.UWT,2023-05-04,2023-05-26
+boucles-de-la-mayenne/2023,boucles-de-la-mayenne,2023,Boucles de la Mayenne,men,stage_race,2.Pro,2023-05-06,2023-05-10
+tro-bro-leon/2023,tro-bro-leon,2023,Tro Bro Leon,men,one_day,1.Pro,2023-05-09,2023-05-09
+4-jours-de-dunkerque/2023,4-jours-de-dunkerque,2023,Quatre Jours de Dunkerque,men,stage_race,2.Pro,2023-05-09,2023-05-13
+tour-of-norway/2023,tour-of-norway,2023,Tour of Norway,men,stage_race,2.Pro,2023-05-14,2023-05-18
+eschborn-frankfurt/2023,eschborn-frankfurt,2023,Eschborn-Frankfurt,men,one_day,1.UWT,2023-05-16,2023-05-16
+tour-de-hongrie/2023,tour-de-hongrie,2023,Tour de Hongrie,men,stage_race,2.Pro,2023-05-19,2023-05-23
+classique-dunkerque/2023,classique-dunkerque,2023,Classique Dunkerque,men,one_day,1.Pro,2023-05-20,2023-05-20
+gp-du-morbihan/2023,gp-du-morbihan,2023,Grand Prix du Morbihan,men,one_day,1.Pro,2023-05-21,2023-05-21
+mont-ventoux-denivele-challenge/2023,mont-ventoux-denivele-challenge,2023,Mont Ventoux Dénivelé Challenge,men,one_day,1.Pro,2023-06-01,2023-06-01
+brussels-cycling-classic/2023,brussels-cycling-classic,2023,Brussels Cycling Classic,men,one_day,1.Pro,2023-06-05,2023-06-05
+baloise-belgium-tour/2023,baloise-belgium-tour,2023,Baloise Belgium Tour,men,stage_race,2.Pro,2023-06-05,2023-06-09
+copenhagen-sprint/2023,copenhagen-sprint,2023,Copenhagen Sprint,men,one_day,1.UWT,2023-06-05,2023-06-05
+dwars-door-het-hageland/2023,dwars-door-het-hageland,2023,Dwars door het Hageland,men,one_day,1.Pro,2023-06-06,2023-06-06
+tour-de-suisse/2023,tour-de-suisse,2023,Tour de Suisse,men,stage_race,2.UWT,2023-06-10,2023-06-17
+dauphine/2023,dauphine,2023,Tour Auvergne-Rhône-Alpes (Dauphiné),men,stage_race,2.UWT,2023-06-13,2023-06-20
+tour-of-slovenia/2023,tour-of-slovenia,2023,Tour of Slovenia,men,stage_race,2.Pro,2023-06-20,2023-06-24
+tour-de-wallonie/2023,tour-de-wallonie,2023,Tour de Wallonie,men,stage_race,2.Pro,2023-07-05,2023-07-09
+tour-de-france/2023,tour-de-france,2023,Tour de France,men,stage_race,2.UWT,2023-07-20,2023-08-11
+benelux-tour/2023,benelux-tour,2023,Renewi Tour,men,stage_race,2.UWT,2023-08-01,2023-08-05
+bretagne-classic/2023,bretagne-classic,2023,Bretagne Classic,men,one_day,1.UWT,2023-08-02,2023-08-02
+tour-de-france-femmes/2023,tour-de-france-femmes,2023,Tour de France Femmes,women,stage_race,2.UWT,2023-08-03,2023-08-10
+vuelta-a-burgos/2023,vuelta-a-burgos,2023,Vuelta a Burgos,men,stage_race,2.Pro,2023-08-05,2023-08-09
+danmark-rundt/2023,danmark-rundt,2023,Danmark Rundt,men,stage_race,2.Pro,2023-08-07,2023-08-11
+vuelta-a-espana/2023,vuelta-a-espana,2023,Vuelta a España,men,stage_race,2.UWT,2023-08-07,2023-08-29
+san-sebastian/2023,san-sebastian,2023,Clásica San Sebastián,men,one_day,1.UWT,2023-08-08,2023-08-08
+arctic-race-of-norway/2023,arctic-race-of-norway,2023,Arctic Race of Norway,men,stage_race,2.Pro,2023-08-08,2023-08-12
+deutschland-tour/2023,deutschland-tour,2023,Deutschland Tour,men,stage_race,2.Pro,2023-08-09,2023-08-13
+circuit-franco-belge/2023,circuit-franco-belge,2023,Circuit Franco-Belge,men,stage_race,2.Pro,2023-08-09,2023-08-13
+tour-de-pologne/2023,tour-de-pologne,2023,Tour de Pologne,men,stage_race,2.UWT,2023-08-10,2023-08-16
+cyclassics-hamburg/2023,cyclassics-hamburg,2023,Cyclassics Hamburg,men,one_day,1.UWT,2023-08-20,2023-08-20
+maryland-cycling-classic/2023,maryland-cycling-classic,2023,Maryland Cycling Classic,men,one_day,1.Pro,2023-09-02,2023-09-02
+gp-industria-artigianato-di-larciano/2023,gp-industria-artigianato-di-larciano,2023,GP Industria & Artigianato,men,one_day,1.Pro,2023-09-04,2023-09-04
+gp-de-fourmies/2023,gp-de-fourmies,2023,GP de Fourmies,men,one_day,1.Pro,2023-09-07,2023-09-07
+super-8-classic/2023,super-8-classic,2023,Super 8 Classic,men,one_day,1.Pro,2023-09-07,2023-09-07
+world-championship/2023,world-championship,2023,World Championships road race,men,championship,1.Pro,2023-09-08,2023-09-08
+tour-of-britain/2023,tour-of-britain,2023,Tour of Britain,men,stage_race,2.Pro,2023-09-10,2023-09-14
+gp-quebec/2023,gp-quebec,2023,GP de Québec,men,one_day,1.UWT,2023-09-10,2023-09-10
+gp-de-wallonie/2023,gp-de-wallonie,2023,GP de Wallonie,men,one_day,1.Pro,2023-09-10,2023-09-10
+world-championship-itt-we/2023,world-championship-itt-we,2023,World Championships ITT (women),women,championship_itt,1.Pro,2023-09-14,2023-09-14
+world-championship-we/2023,world-championship-we,2023,World Championships road race (women),women,championship,1.Pro,2023-09-15,2023-09-15
+world-championship-itt/2023,world-championship-itt,2023,World Championships ITT,men,championship_itt,1.Pro,2023-09-17,2023-09-17
+coppa-sabatini/2023,coppa-sabatini,2023,Coppa Sabatini,men,one_day,1.Pro,2023-09-20,2023-09-20
+gp-montreal/2023,gp-montreal,2023,GP de Montréal,men,one_day,1.UWT,2023-09-21,2023-09-21
+tour-de-luxembourg/2023,tour-de-luxembourg,2023,Tour de Luxembourg,men,stage_race,2.Pro,2023-09-21,2023-09-25
+tre-valli-varesine/2023,tre-valli-varesine,2023,Tre Valli Varesine,men,one_day,1.Pro,2023-10-01,2023-10-01
+giro-del-veneto/2023,giro-del-veneto,2023,Giro del Veneto,men,one_day,1.Pro,2023-10-01,2023-10-01
+japan-cup/2023,japan-cup,2023,Japan Cup,men,one_day,1.Pro,2023-10-02,2023-10-02
+tour-of-guangxi/2023,tour-of-guangxi,2023,Tour of Guangxi,men,stage_race,2.UWT,2023-10-02,2023-10-06
+giro-dell-emilia/2023,giro-dell-emilia,2023,Giro dell'Emilia,men,one_day,1.Pro,2023-10-06,2023-10-06
+uec-road-european-championships-itt-we/2023,uec-road-european-championships-itt-we,2023,European Championships ITT (women),women,championship_itt,1.Pro,2023-10-09,2023-10-09
+coppa-bernocchi/2023,coppa-bernocchi,2023,Coppa Bernocchi,men,one_day,1.Pro,2023-10-10,2023-10-10
+il-lombardia/2023,il-lombardia,2023,Il Lombardia,men,one_day,1.UWT,2023-10-14,2023-10-14
+sparkassen-munsterland-giro/2023,sparkassen-munsterland-giro,2023,Münsterland Giro,men,one_day,1.Pro,2023-10-15,2023-10-15
+uec-road-european-championships-itt/2023,uec-road-european-championships-itt,2023,European Championships ITT,men,championship_itt,1.Pro,2023-10-15,2023-10-15
+uec-road-european-championships-we/2023,uec-road-european-championships-we,2023,European Championships road race (women),women,championship,1.Pro,2023-10-18,2023-10-18
+uec-road-european-championships/2023,uec-road-european-championships,2023,European Championships road race,men,championship,1.Pro,2023-10-19,2023-10-19
+gran-piemonte/2023,gran-piemonte,2023,Gran Piemonte,men,one_day,1.Pro,2023-10-20,2023-10-20
+paris-tours/2023,paris-tours,2023,Paris-Tours,men,one_day,1.Pro,2023-10-20,2023-10-20
+veneto-classic/2023,veneto-classic,2023,Veneto Classic,men,one_day,1.Pro,2023-10-21,2023-10-21
+tour-down-under/2024,tour-down-under,2024,Santos Tour Down Under,men,stage_race,2.UWT,2024-01-03,2024-01-08
+figueira-champions-classic/2024,figueira-champions-classic,2024,Figueira Champions Classic,men,one_day,1.Pro,2024-02-02,2024-02-02
+uae-tour/2024,uae-tour,2024,UAE Tour,men,stage_race,2.UWT,2024-02-03,2024-02-09
+tour-of-oman/2024,tour-of-oman,2024,Tour of Oman,men,stage_race,2.Pro,2024-02-04,2024-02-08
+clasica-de-almeria/2024,clasica-de-almeria,2024,Clásica de Almería,men,one_day,1.Pro,2024-02-07,2024-02-07
+cadel-evans-great-ocean-road-race/2024,cadel-evans-great-ocean-road-race,2024,Cadel Evans Great Ocean Road Race,men,one_day,1.UWT,2024-02-09,2024-02-09
+volta-ao-algarve/2024,volta-ao-algarve,2024,Volta ao Algarve,men,stage_race,2.Pro,2024-02-09,2024-02-13
+vuelta-a-andalucia/2024,vuelta-a-andalucia,2024,Vuelta a Andalucía,men,stage_race,2.Pro,2024-02-12,2024-02-16
+volta-a-la-comunitat-valenciana/2024,volta-a-la-comunitat-valenciana,2024,Volta a la Comunitat Valenciana,men,stage_race,2.Pro,2024-02-15,2024-02-19
+tour-de-la-provence/2024,tour-de-la-provence,2024,Tour de la Provence,men,stage_race,2.Pro,2024-02-19,2024-02-23
+faun-ardeche-classic/2024,faun-ardeche-classic,2024,Faun-Ardèche Classic,men,one_day,1.Pro,2024-03-01,2024-03-01
+strade-bianche/2024,strade-bianche,2024,Strade Bianche,men,one_day,1.UWT,2024-03-03,2024-03-03
+tirreno-adriatico/2024,tirreno-adriatico,2024,Tirreno-Adriatico,men,stage_race,2.UWT,2024-03-04,2024-03-10
+milano-sanremo/2024,milano-sanremo,2024,Milano-Sanremo,men,one_day,1.UWT,2024-03-04,2024-03-04
+dwars-door-vlaanderen/2024,dwars-door-vlaanderen,2024,Dwars door Vlaanderen,men,one_day,1.UWT,2024-03-05,2024-03-05
+trofeo-laigueglia/2024,trofeo-laigueglia,2024,Trofeo Laigueglia,men,one_day,1.Pro,2024-03-06,2024-03-06
+kuurne-brussel-kuurne/2024,kuurne-brussel-kuurne,2024,Kuurne-Brussel-Kuurne,men,one_day,1.Pro,2024-03-08,2024-03-08
+e3-harelbeke/2024,e3-harelbeke,2024,E3 Saxo Classic,men,one_day,1.UWT,2024-03-10,2024-03-10
+la-drome-classic/2024,la-drome-classic,2024,La Drôme Classic,men,one_day,1.Pro,2024-03-12,2024-03-12
+nokere-koerse/2024,nokere-koerse,2024,Nokere Koerse,men,one_day,1.Pro,2024-03-12,2024-03-12
+volta-a-catalunya/2024,volta-a-catalunya,2024,Volta a Catalunya,men,stage_race,2.UWT,2024-03-13,2024-03-19
+gent-wevelgem/2024,gent-wevelgem,2024,Gent-Wevelgem,men,one_day,1.UWT,2024-03-13,2024-03-13
+omloop-het-nieuwsblad/2024,omloop-het-nieuwsblad,2024,Omloop Het Nieuwsblad,men,one_day,1.UWT,2024-03-17,2024-03-17
+gp-de-denain/2024,gp-de-denain,2024,GP de Denain,men,one_day,1.Pro,2024-03-18,2024-03-18
+bredene-koksijde-classic/2024,bredene-koksijde-classic,2024,Bredene Koksijde Classic,men,one_day,1.Pro,2024-03-18,2024-03-18
+classic-brugge-de-panne/2024,classic-brugge-de-panne,2024,Classic Brugge-De Panne,men,one_day,1.UWT,2024-03-19,2024-03-19
+paris-nice/2024,paris-nice,2024,Paris-Nice,men,stage_race,2.UWT,2024-03-20,2024-03-27
+milano-torino/2024,milano-torino,2024,Milano-Torino,men,one_day,1.Pro,2024-03-21,2024-03-21
+itzulia-basque-country/2024,itzulia-basque-country,2024,Itzulia Basque Country,men,stage_race,2.UWT,2024-04-01,2024-04-06
+amstel-gold-race/2024,amstel-gold-race,2024,Amstel Gold Race,men,one_day,1.UWT,2024-04-09,2024-04-09
+ronde-van-vlaanderen/2024,ronde-van-vlaanderen,2024,Ronde van Vlaanderen,men,one_day,1.UWT,2024-04-12,2024-04-12
+la-fleche-wallone/2024,la-fleche-wallone,2024,La Flèche Wallonne,men,one_day,1.UWT,2024-04-12,2024-04-12
+tour-of-the-alps/2024,tour-of-the-alps,2024,Tour of the Alps,men,stage_race,2.Pro,2024-04-13,2024-04-17
+liege-bastogne-liege/2024,liege-bastogne-liege,2024,Liège-Bastogne-Liège,men,one_day,1.UWT,2024-04-16,2024-04-16
+brabantse-pijl/2024,brabantse-pijl,2024,Brabantse Pijl,men,one_day,1.Pro,2024-04-17,2024-04-17
+tour-de-romandie/2024,tour-de-romandie,2024,Tour de Romandie,men,stage_race,2.UWT,2024-04-18,2024-04-23
+gp-miguel-indurain/2024,gp-miguel-indurain,2024,GP Miguel Induráin,men,one_day,1.Pro,2024-04-19,2024-04-19
+scheldeprijs/2024,scheldeprijs,2024,Scheldeprijs,men,one_day,1.Pro,2024-04-19,2024-04-19
+paris-roubaix/2024,paris-roubaix,2024,Paris-Roubaix,men,one_day,1.UWT,2024-04-20,2024-04-20
+giro-d-italia/2024,giro-d-italia,2024,Giro d'Italia,men,stage_race,2.UWT,2024-05-04,2024-05-26
+boucles-de-la-mayenne/2024,boucles-de-la-mayenne,2024,Boucles de la Mayenne,men,stage_race,2.Pro,2024-05-06,2024-05-10
+tro-bro-leon/2024,tro-bro-leon,2024,Tro Bro Leon,men,one_day,1.Pro,2024-05-09,2024-05-09
+4-jours-de-dunkerque/2024,4-jours-de-dunkerque,2024,Quatre Jours de Dunkerque,men,stage_race,2.Pro,2024-05-09,2024-05-13
+tour-of-norway/2024,tour-of-norway,2024,Tour of Norway,men,stage_race,2.Pro,2024-05-14,2024-05-18
+eschborn-frankfurt/2024,eschborn-frankfurt,2024,Eschborn-Frankfurt,men,one_day,1.UWT,2024-05-16,2024-05-16
+tour-de-hongrie/2024,tour-de-hongrie,2024,Tour de Hongrie,men,stage_race,2.Pro,2024-05-19,2024-05-23
+classique-dunkerque/2024,classique-dunkerque,2024,Classique Dunkerque,men,one_day,1.Pro,2024-05-20,2024-05-20
+gp-du-morbihan/2024,gp-du-morbihan,2024,Grand Prix du Morbihan,men,one_day,1.Pro,2024-05-21,2024-05-21
+mont-ventoux-denivele-challenge/2024,mont-ventoux-denivele-challenge,2024,Mont Ventoux Dénivelé Challenge,men,one_day,1.Pro,2024-06-01,2024-06-01
+brussels-cycling-classic/2024,brussels-cycling-classic,2024,Brussels Cycling Classic,men,one_day,1.Pro,2024-06-05,2024-06-05
+baloise-belgium-tour/2024,baloise-belgium-tour,2024,Baloise Belgium Tour,men,stage_race,2.Pro,2024-06-05,2024-06-09
+copenhagen-sprint/2024,copenhagen-sprint,2024,Copenhagen Sprint,men,one_day,1.UWT,2024-06-05,2024-06-05
+dwars-door-het-hageland/2024,dwars-door-het-hageland,2024,Dwars door het Hageland,men,one_day,1.Pro,2024-06-06,2024-06-06
+tour-de-suisse/2024,tour-de-suisse,2024,Tour de Suisse,men,stage_race,2.UWT,2024-06-10,2024-06-17
+dauphine/2024,dauphine,2024,Tour Auvergne-Rhône-Alpes (Dauphiné),men,stage_race,2.UWT,2024-06-13,2024-06-20
+tour-of-slovenia/2024,tour-of-slovenia,2024,Tour of Slovenia,men,stage_race,2.Pro,2024-06-20,2024-06-24
+tour-de-wallonie/2024,tour-de-wallonie,2024,Tour de Wallonie,men,stage_race,2.Pro,2024-07-05,2024-07-09
+tour-de-france/2024,tour-de-france,2024,Tour de France,men,stage_race,2.UWT,2024-07-20,2024-08-11
+benelux-tour/2024,benelux-tour,2024,Renewi Tour,men,stage_race,2.UWT,2024-08-01,2024-08-05
+bretagne-classic/2024,bretagne-classic,2024,Bretagne Classic,men,one_day,1.UWT,2024-08-02,2024-08-02
+tour-de-france-femmes/2024,tour-de-france-femmes,2024,Tour de France Femmes,women,stage_race,2.UWT,2024-08-03,2024-08-10
+olympic-games-we/2024,olympic-games-we,2024,Olympic Games road race (women),women,championship,1.Pro,2024-08-03,2024-08-03
+olympic-games/2024,olympic-games,2024,Olympic Games road race,men,championship,1.Pro,2024-08-04,2024-08-04
+vuelta-a-burgos/2024,vuelta-a-burgos,2024,Vuelta a Burgos,men,stage_race,2.Pro,2024-08-05,2024-08-09
+danmark-rundt/2024,danmark-rundt,2024,Danmark Rundt,men,stage_race,2.Pro,2024-08-07,2024-08-11
+vuelta-a-espana/2024,vuelta-a-espana,2024,Vuelta a España,men,stage_race,2.UWT,2024-08-07,2024-08-29
+san-sebastian/2024,san-sebastian,2024,Clásica San Sebastián,men,one_day,1.UWT,2024-08-08,2024-08-08
+arctic-race-of-norway/2024,arctic-race-of-norway,2024,Arctic Race of Norway,men,stage_race,2.Pro,2024-08-08,2024-08-12
+deutschland-tour/2024,deutschland-tour,2024,Deutschland Tour,men,stage_race,2.Pro,2024-08-09,2024-08-13
+circuit-franco-belge/2024,circuit-franco-belge,2024,Circuit Franco-Belge,men,stage_race,2.Pro,2024-08-09,2024-08-13
+tour-de-pologne/2024,tour-de-pologne,2024,Tour de Pologne,men,stage_race,2.UWT,2024-08-10,2024-08-16
+olympic-games-itt-we/2024,olympic-games-itt-we,2024,Olympic Games ITT (women),women,championship_itt,1.Pro,2024-08-11,2024-08-11
+olympic-games-itt/2024,olympic-games-itt,2024,Olympic Games ITT,men,championship_itt,1.Pro,2024-08-13,2024-08-13
+cyclassics-hamburg/2024,cyclassics-hamburg,2024,Cyclassics Hamburg,men,one_day,1.UWT,2024-08-20,2024-08-20
+maryland-cycling-classic/2024,maryland-cycling-classic,2024,Maryland Cycling Classic,men,one_day,1.Pro,2024-09-02,2024-09-02
+gp-industria-artigianato-di-larciano/2024,gp-industria-artigianato-di-larciano,2024,GP Industria & Artigianato,men,one_day,1.Pro,2024-09-04,2024-09-04
+gp-de-fourmies/2024,gp-de-fourmies,2024,GP de Fourmies,men,one_day,1.Pro,2024-09-07,2024-09-07
+super-8-classic/2024,super-8-classic,2024,Super 8 Classic,men,one_day,1.Pro,2024-09-07,2024-09-07
+world-championship/2024,world-championship,2024,World Championships road race,men,championship,1.Pro,2024-09-08,2024-09-08
+tour-of-britain/2024,tour-of-britain,2024,Tour of Britain,men,stage_race,2.Pro,2024-09-10,2024-09-14
+gp-quebec/2024,gp-quebec,2024,GP de Québec,men,one_day,1.UWT,2024-09-10,2024-09-10
+gp-de-wallonie/2024,gp-de-wallonie,2024,GP de Wallonie,men,one_day,1.Pro,2024-09-10,2024-09-10
+world-championship-itt-we/2024,world-championship-itt-we,2024,World Championships ITT (women),women,championship_itt,1.Pro,2024-09-14,2024-09-14
+world-championship-we/2024,world-championship-we,2024,World Championships road race (women),women,championship,1.Pro,2024-09-15,2024-09-15
+world-championship-itt/2024,world-championship-itt,2024,World Championships ITT,men,championship_itt,1.Pro,2024-09-17,2024-09-17
+coppa-sabatini/2024,coppa-sabatini,2024,Coppa Sabatini,men,one_day,1.Pro,2024-09-20,2024-09-20
+gp-montreal/2024,gp-montreal,2024,GP de Montréal,men,one_day,1.UWT,2024-09-21,2024-09-21
+tour-de-luxembourg/2024,tour-de-luxembourg,2024,Tour de Luxembourg,men,stage_race,2.Pro,2024-09-21,2024-09-25
+tre-valli-varesine/2024,tre-valli-varesine,2024,Tre Valli Varesine,men,one_day,1.Pro,2024-10-01,2024-10-01
+giro-del-veneto/2024,giro-del-veneto,2024,Giro del Veneto,men,one_day,1.Pro,2024-10-01,2024-10-01
+japan-cup/2024,japan-cup,2024,Japan Cup,men,one_day,1.Pro,2024-10-02,2024-10-02
+tour-of-guangxi/2024,tour-of-guangxi,2024,Tour of Guangxi,men,stage_race,2.UWT,2024-10-02,2024-10-06
+giro-dell-emilia/2024,giro-dell-emilia,2024,Giro dell'Emilia,men,one_day,1.Pro,2024-10-06,2024-10-06
+uec-road-european-championships-itt-we/2024,uec-road-european-championships-itt-we,2024,European Championships ITT (women),women,championship_itt,1.Pro,2024-10-09,2024-10-09
+coppa-bernocchi/2024,coppa-bernocchi,2024,Coppa Bernocchi,men,one_day,1.Pro,2024-10-10,2024-10-10
+il-lombardia/2024,il-lombardia,2024,Il Lombardia,men,one_day,1.UWT,2024-10-14,2024-10-14
+sparkassen-munsterland-giro/2024,sparkassen-munsterland-giro,2024,Münsterland Giro,men,one_day,1.Pro,2024-10-15,2024-10-15
+uec-road-european-championships-itt/2024,uec-road-european-championships-itt,2024,European Championships ITT,men,championship_itt,1.Pro,2024-10-15,2024-10-15
+uec-road-european-championships-we/2024,uec-road-european-championships-we,2024,European Championships road race (women),women,championship,1.Pro,2024-10-18,2024-10-18
+uec-road-european-championships/2024,uec-road-european-championships,2024,European Championships road race,men,championship,1.Pro,2024-10-19,2024-10-19
+gran-piemonte/2024,gran-piemonte,2024,Gran Piemonte,men,one_day,1.Pro,2024-10-20,2024-10-20
+paris-tours/2024,paris-tours,2024,Paris-Tours,men,one_day,1.Pro,2024-10-20,2024-10-20
+veneto-classic/2024,veneto-classic,2024,Veneto Classic,men,one_day,1.Pro,2024-10-21,2024-10-21
+tour-down-under/2025,tour-down-under,2025,Santos Tour Down Under,men,stage_race,2.UWT,2025-01-03,2025-01-08
+figueira-champions-classic/2025,figueira-champions-classic,2025,Figueira Champions Classic,men,one_day,1.Pro,2025-02-02,2025-02-02
+uae-tour/2025,uae-tour,2025,UAE Tour,men,stage_race,2.UWT,2025-02-03,2025-02-09
+tour-of-oman/2025,tour-of-oman,2025,Tour of Oman,men,stage_race,2.Pro,2025-02-04,2025-02-08
+clasica-de-almeria/2025,clasica-de-almeria,2025,Clásica de Almería,men,one_day,1.Pro,2025-02-07,2025-02-07
+cadel-evans-great-ocean-road-race/2025,cadel-evans-great-ocean-road-race,2025,Cadel Evans Great Ocean Road Race,men,one_day,1.UWT,2025-02-09,2025-02-09
+volta-ao-algarve/2025,volta-ao-algarve,2025,Volta ao Algarve,men,stage_race,2.Pro,2025-02-09,2025-02-13
+vuelta-a-andalucia/2025,vuelta-a-andalucia,2025,Vuelta a Andalucía,men,stage_race,2.Pro,2025-02-12,2025-02-16
+volta-a-la-comunitat-valenciana/2025,volta-a-la-comunitat-valenciana,2025,Volta a la Comunitat Valenciana,men,stage_race,2.Pro,2025-02-15,2025-02-19
+tour-de-la-provence/2025,tour-de-la-provence,2025,Tour de la Provence,men,stage_race,2.Pro,2025-02-19,2025-02-23
+faun-ardeche-classic/2025,faun-ardeche-classic,2025,Faun-Ardèche Classic,men,one_day,1.Pro,2025-03-01,2025-03-01
+strade-bianche/2025,strade-bianche,2025,Strade Bianche,men,one_day,1.UWT,2025-03-03,2025-03-03
+tirreno-adriatico/2025,tirreno-adriatico,2025,Tirreno-Adriatico,men,stage_race,2.UWT,2025-03-04,2025-03-10
+milano-sanremo/2025,milano-sanremo,2025,Milano-Sanremo,men,one_day,1.UWT,2025-03-04,2025-03-04
+dwars-door-vlaanderen/2025,dwars-door-vlaanderen,2025,Dwars door Vlaanderen,men,one_day,1.UWT,2025-03-05,2025-03-05
+trofeo-laigueglia/2025,trofeo-laigueglia,2025,Trofeo Laigueglia,men,one_day,1.Pro,2025-03-06,2025-03-06
+kuurne-brussel-kuurne/2025,kuurne-brussel-kuurne,2025,Kuurne-Brussel-Kuurne,men,one_day,1.Pro,2025-03-08,2025-03-08
+e3-harelbeke/2025,e3-harelbeke,2025,E3 Saxo Classic,men,one_day,1.UWT,2025-03-10,2025-03-10
+la-drome-classic/2025,la-drome-classic,2025,La Drôme Classic,men,one_day,1.Pro,2025-03-12,2025-03-12
+nokere-koerse/2025,nokere-koerse,2025,Nokere Koerse,men,one_day,1.Pro,2025-03-12,2025-03-12
+volta-a-catalunya/2025,volta-a-catalunya,2025,Volta a Catalunya,men,stage_race,2.UWT,2025-03-13,2025-03-19
+gent-wevelgem/2025,gent-wevelgem,2025,Gent-Wevelgem,men,one_day,1.UWT,2025-03-13,2025-03-13
+omloop-het-nieuwsblad/2025,omloop-het-nieuwsblad,2025,Omloop Het Nieuwsblad,men,one_day,1.UWT,2025-03-17,2025-03-17
+gp-de-denain/2025,gp-de-denain,2025,GP de Denain,men,one_day,1.Pro,2025-03-18,2025-03-18
+bredene-koksijde-classic/2025,bredene-koksijde-classic,2025,Bredene Koksijde Classic,men,one_day,1.Pro,2025-03-18,2025-03-18
+classic-brugge-de-panne/2025,classic-brugge-de-panne,2025,Classic Brugge-De Panne,men,one_day,1.UWT,2025-03-19,2025-03-19
+paris-nice/2025,paris-nice,2025,Paris-Nice,men,stage_race,2.UWT,2025-03-20,2025-03-27
+milano-torino/2025,milano-torino,2025,Milano-Torino,men,one_day,1.Pro,2025-03-21,2025-03-21
+itzulia-basque-country/2025,itzulia-basque-country,2025,Itzulia Basque Country,men,stage_race,2.UWT,2025-04-01,2025-04-06
+amstel-gold-race/2025,amstel-gold-race,2025,Amstel Gold Race,men,one_day,1.UWT,2025-04-09,2025-04-09
+ronde-van-vlaanderen/2025,ronde-van-vlaanderen,2025,Ronde van Vlaanderen,men,one_day,1.UWT,2025-04-12,2025-04-12
+la-fleche-wallone/2025,la-fleche-wallone,2025,La Flèche Wallonne,men,one_day,1.UWT,2025-04-12,2025-04-12
+tour-of-the-alps/2025,tour-of-the-alps,2025,Tour of the Alps,men,stage_race,2.Pro,2025-04-13,2025-04-17
+liege-bastogne-liege/2025,liege-bastogne-liege,2025,Liège-Bastogne-Liège,men,one_day,1.UWT,2025-04-16,2025-04-16
+brabantse-pijl/2025,brabantse-pijl,2025,Brabantse Pijl,men,one_day,1.Pro,2025-04-17,2025-04-17
+tour-de-romandie/2025,tour-de-romandie,2025,Tour de Romandie,men,stage_race,2.UWT,2025-04-18,2025-04-23
+gp-miguel-indurain/2025,gp-miguel-indurain,2025,GP Miguel Induráin,men,one_day,1.Pro,2025-04-19,2025-04-19
+scheldeprijs/2025,scheldeprijs,2025,Scheldeprijs,men,one_day,1.Pro,2025-04-19,2025-04-19
+paris-roubaix/2025,paris-roubaix,2025,Paris-Roubaix,men,one_day,1.UWT,2025-04-20,2025-04-20
+giro-d-italia/2025,giro-d-italia,2025,Giro d'Italia,men,stage_race,2.UWT,2025-05-04,2025-05-26
+boucles-de-la-mayenne/2025,boucles-de-la-mayenne,2025,Boucles de la Mayenne,men,stage_race,2.Pro,2025-05-06,2025-05-10
+tro-bro-leon/2025,tro-bro-leon,2025,Tro Bro Leon,men,one_day,1.Pro,2025-05-09,2025-05-09
+4-jours-de-dunkerque/2025,4-jours-de-dunkerque,2025,Quatre Jours de Dunkerque,men,stage_race,2.Pro,2025-05-09,2025-05-13
+tour-of-norway/2025,tour-of-norway,2025,Tour of Norway,men,stage_race,2.Pro,2025-05-14,2025-05-18
+eschborn-frankfurt/2025,eschborn-frankfurt,2025,Eschborn-Frankfurt,men,one_day,1.UWT,2025-05-16,2025-05-16
+tour-de-hongrie/2025,tour-de-hongrie,2025,Tour de Hongrie,men,stage_race,2.Pro,2025-05-19,2025-05-23
+classique-dunkerque/2025,classique-dunkerque,2025,Classique Dunkerque,men,one_day,1.Pro,2025-05-20,2025-05-20
+gp-du-morbihan/2025,gp-du-morbihan,2025,Grand Prix du Morbihan,men,one_day,1.Pro,2025-05-21,2025-05-21
+mont-ventoux-denivele-challenge/2025,mont-ventoux-denivele-challenge,2025,Mont Ventoux Dénivelé Challenge,men,one_day,1.Pro,2025-06-01,2025-06-01
+brussels-cycling-classic/2025,brussels-cycling-classic,2025,Brussels Cycling Classic,men,one_day,1.Pro,2025-06-05,2025-06-05
+baloise-belgium-tour/2025,baloise-belgium-tour,2025,Baloise Belgium Tour,men,stage_race,2.Pro,2025-06-05,2025-06-09
+copenhagen-sprint/2025,copenhagen-sprint,2025,Copenhagen Sprint,men,one_day,1.UWT,2025-06-05,2025-06-05
+dwars-door-het-hageland/2025,dwars-door-het-hageland,2025,Dwars door het Hageland,men,one_day,1.Pro,2025-06-06,2025-06-06
+tour-de-suisse/2025,tour-de-suisse,2025,Tour de Suisse,men,stage_race,2.UWT,2025-06-10,2025-06-17
+dauphine/2025,dauphine,2025,Tour Auvergne-Rhône-Alpes (Dauphiné),men,stage_race,2.UWT,2025-06-13,2025-06-20
+tour-of-slovenia/2025,tour-of-slovenia,2025,Tour of Slovenia,men,stage_race,2.Pro,2025-06-20,2025-06-24
+tour-de-wallonie/2025,tour-de-wallonie,2025,Tour de Wallonie,men,stage_race,2.Pro,2025-07-05,2025-07-09
+tour-de-france/2025,tour-de-france,2025,Tour de France,men,stage_race,2.UWT,2025-07-20,2025-08-11
+benelux-tour/2025,benelux-tour,2025,Renewi Tour,men,stage_race,2.UWT,2025-08-01,2025-08-05
+bretagne-classic/2025,bretagne-classic,2025,Bretagne Classic,men,one_day,1.UWT,2025-08-02,2025-08-02
+tour-de-france-femmes/2025,tour-de-france-femmes,2025,Tour de France Femmes,women,stage_race,2.UWT,2025-08-03,2025-08-10
+vuelta-a-burgos/2025,vuelta-a-burgos,2025,Vuelta a Burgos,men,stage_race,2.Pro,2025-08-05,2025-08-09
+danmark-rundt/2025,danmark-rundt,2025,Danmark Rundt,men,stage_race,2.Pro,2025-08-07,2025-08-11
+vuelta-a-espana/2025,vuelta-a-espana,2025,Vuelta a España,men,stage_race,2.UWT,2025-08-07,2025-08-29
+san-sebastian/2025,san-sebastian,2025,Clásica San Sebastián,men,one_day,1.UWT,2025-08-08,2025-08-08
+arctic-race-of-norway/2025,arctic-race-of-norway,2025,Arctic Race of Norway,men,stage_race,2.Pro,2025-08-08,2025-08-12
+deutschland-tour/2025,deutschland-tour,2025,Deutschland Tour,men,stage_race,2.Pro,2025-08-09,2025-08-13
+circuit-franco-belge/2025,circuit-franco-belge,2025,Circuit Franco-Belge,men,stage_race,2.Pro,2025-08-09,2025-08-13
+tour-de-pologne/2025,tour-de-pologne,2025,Tour de Pologne,men,stage_race,2.UWT,2025-08-10,2025-08-16
+cyclassics-hamburg/2025,cyclassics-hamburg,2025,Cyclassics Hamburg,men,one_day,1.UWT,2025-08-20,2025-08-20
+maryland-cycling-classic/2025,maryland-cycling-classic,2025,Maryland Cycling Classic,men,one_day,1.Pro,2025-09-02,2025-09-02
+gp-industria-artigianato-di-larciano/2025,gp-industria-artigianato-di-larciano,2025,GP Industria & Artigianato,men,one_day,1.Pro,2025-09-04,2025-09-04
+gp-de-fourmies/2025,gp-de-fourmies,2025,GP de Fourmies,men,one_day,1.Pro,2025-09-07,2025-09-07
+super-8-classic/2025,super-8-classic,2025,Super 8 Classic,men,one_day,1.Pro,2025-09-07,2025-09-07
+world-championship/2025,world-championship,2025,World Championships road race,men,championship,1.Pro,2025-09-08,2025-09-08
+tour-of-britain/2025,tour-of-britain,2025,Tour of Britain,men,stage_race,2.Pro,2025-09-10,2025-09-14
+gp-quebec/2025,gp-quebec,2025,GP de Québec,men,one_day,1.UWT,2025-09-10,2025-09-10
+gp-de-wallonie/2025,gp-de-wallonie,2025,GP de Wallonie,men,one_day,1.Pro,2025-09-10,2025-09-10
+world-championship-itt-we/2025,world-championship-itt-we,2025,World Championships ITT (women),women,championship_itt,1.Pro,2025-09-14,2025-09-14
+world-championship-we/2025,world-championship-we,2025,World Championships road race (women),women,championship,1.Pro,2025-09-15,2025-09-15
+world-championship-itt/2025,world-championship-itt,2025,World Championships ITT,men,championship_itt,1.Pro,2025-09-17,2025-09-17
+coppa-sabatini/2025,coppa-sabatini,2025,Coppa Sabatini,men,one_day,1.Pro,2025-09-20,2025-09-20
+gp-montreal/2025,gp-montreal,2025,GP de Montréal,men,one_day,1.UWT,2025-09-21,2025-09-21
+tour-de-luxembourg/2025,tour-de-luxembourg,2025,Tour de Luxembourg,men,stage_race,2.Pro,2025-09-21,2025-09-25
+tre-valli-varesine/2025,tre-valli-varesine,2025,Tre Valli Varesine,men,one_day,1.Pro,2025-10-01,2025-10-01
+giro-del-veneto/2025,giro-del-veneto,2025,Giro del Veneto,men,one_day,1.Pro,2025-10-01,2025-10-01
+japan-cup/2025,japan-cup,2025,Japan Cup,men,one_day,1.Pro,2025-10-02,2025-10-02
+tour-of-guangxi/2025,tour-of-guangxi,2025,Tour of Guangxi,men,stage_race,2.UWT,2025-10-02,2025-10-06
+giro-dell-emilia/2025,giro-dell-emilia,2025,Giro dell'Emilia,men,one_day,1.Pro,2025-10-06,2025-10-06
+uec-road-european-championships-itt-we/2025,uec-road-european-championships-itt-we,2025,European Championships ITT (women),women,championship_itt,1.Pro,2025-10-09,2025-10-09
+coppa-bernocchi/2025,coppa-bernocchi,2025,Coppa Bernocchi,men,one_day,1.Pro,2025-10-10,2025-10-10
+il-lombardia/2025,il-lombardia,2025,Il Lombardia,men,one_day,1.UWT,2025-10-14,2025-10-14
+sparkassen-munsterland-giro/2025,sparkassen-munsterland-giro,2025,Münsterland Giro,men,one_day,1.Pro,2025-10-15,2025-10-15
+uec-road-european-championships-itt/2025,uec-road-european-championships-itt,2025,European Championships ITT,men,championship_itt,1.Pro,2025-10-15,2025-10-15
+uec-road-european-championships-we/2025,uec-road-european-championships-we,2025,European Championships road race (women),women,championship,1.Pro,2025-10-18,2025-10-18
+uec-road-european-championships/2025,uec-road-european-championships,2025,European Championships road race,men,championship,1.Pro,2025-10-19,2025-10-19
+gran-piemonte/2025,gran-piemonte,2025,Gran Piemonte,men,one_day,1.Pro,2025-10-20,2025-10-20
+paris-tours/2025,paris-tours,2025,Paris-Tours,men,one_day,1.Pro,2025-10-20,2025-10-20
+veneto-classic/2025,veneto-classic,2025,Veneto Classic,men,one_day,1.Pro,2025-10-21,2025-10-21
+tour-down-under/2026,tour-down-under,2026,Santos Tour Down Under,men,stage_race,2.UWT,2026-01-03,2026-01-08
+figueira-champions-classic/2026,figueira-champions-classic,2026,Figueira Champions Classic,men,one_day,1.Pro,2026-02-02,2026-02-02
+uae-tour/2026,uae-tour,2026,UAE Tour,men,stage_race,2.UWT,2026-02-03,2026-02-09
+tour-of-oman/2026,tour-of-oman,2026,Tour of Oman,men,stage_race,2.Pro,2026-02-04,2026-02-08
+clasica-de-almeria/2026,clasica-de-almeria,2026,Clásica de Almería,men,one_day,1.Pro,2026-02-07,2026-02-07
+cadel-evans-great-ocean-road-race/2026,cadel-evans-great-ocean-road-race,2026,Cadel Evans Great Ocean Road Race,men,one_day,1.UWT,2026-02-09,2026-02-09
+volta-ao-algarve/2026,volta-ao-algarve,2026,Volta ao Algarve,men,stage_race,2.Pro,2026-02-09,2026-02-13
+vuelta-a-andalucia/2026,vuelta-a-andalucia,2026,Vuelta a Andalucía,men,stage_race,2.Pro,2026-02-12,2026-02-16
+volta-a-la-comunitat-valenciana/2026,volta-a-la-comunitat-valenciana,2026,Volta a la Comunitat Valenciana,men,stage_race,2.Pro,2026-02-15,2026-02-19
+tour-de-la-provence/2026,tour-de-la-provence,2026,Tour de la Provence,men,stage_race,2.Pro,2026-02-19,2026-02-23
+faun-ardeche-classic/2026,faun-ardeche-classic,2026,Faun-Ardèche Classic,men,one_day,1.Pro,2026-03-01,2026-03-01
+strade-bianche/2026,strade-bianche,2026,Strade Bianche,men,one_day,1.UWT,2026-03-03,2026-03-03
+tirreno-adriatico/2026,tirreno-adriatico,2026,Tirreno-Adriatico,men,stage_race,2.UWT,2026-03-04,2026-03-10
+milano-sanremo/2026,milano-sanremo,2026,Milano-Sanremo,men,one_day,1.UWT,2026-03-04,2026-03-04
+dwars-door-vlaanderen/2026,dwars-door-vlaanderen,2026,Dwars door Vlaanderen,men,one_day,1.UWT,2026-03-05,2026-03-05
+trofeo-laigueglia/2026,trofeo-laigueglia,2026,Trofeo Laigueglia,men,one_day,1.Pro,2026-03-06,2026-03-06
+kuurne-brussel-kuurne/2026,kuurne-brussel-kuurne,2026,Kuurne-Brussel-Kuurne,men,one_day,1.Pro,2026-03-08,2026-03-08
+e3-harelbeke/2026,e3-harelbeke,2026,E3 Saxo Classic,men,one_day,1.UWT,2026-03-10,2026-03-10
+la-drome-classic/2026,la-drome-classic,2026,La Drôme Classic,men,one_day,1.Pro,2026-03-12,2026-03-12
+nokere-koerse/2026,nokere-koerse,2026,Nokere Koerse,men,one_day,1.Pro,2026-03-12,2026-03-12
+volta-a-catalunya/2026,volta-a-catalunya,2026,Volta a Catalunya,men,stage_race,2.UWT,2026-03-13,2026-03-19
+gent-wevelgem/2026,gent-wevelgem,2026,Gent-Wevelgem,men,one_day,1.UWT,2026-03-13,2026-03-13
+omloop-het-nieuwsblad/2026,omloop-het-nieuwsblad,2026,Omloop Het Nieuwsblad,men,one_day,1.UWT,2026-03-17,2026-03-17
+gp-de-denain/2026,gp-de-denain,2026,GP de Denain,men,one_day,1.Pro,2026-03-18,2026-03-18
+bredene-koksijde-classic/2026,bredene-koksijde-classic,2026,Bredene Koksijde Classic,men,one_day,1.Pro,2026-03-18,2026-03-18
+classic-brugge-de-panne/2026,classic-brugge-de-panne,2026,Classic Brugge-De Panne,men,one_day,1.UWT,2026-03-19,2026-03-19
+paris-nice/2026,paris-nice,2026,Paris-Nice,men,stage_race,2.UWT,2026-03-20,2026-03-27
+milano-torino/2026,milano-torino,2026,Milano-Torino,men,one_day,1.Pro,2026-03-21,2026-03-21
+itzulia-basque-country/2026,itzulia-basque-country,2026,Itzulia Basque Country,men,stage_race,2.UWT,2026-04-01,2026-04-06
+amstel-gold-race/2026,amstel-gold-race,2026,Amstel Gold Race,men,one_day,1.UWT,2026-04-09,2026-04-09
+ronde-van-vlaanderen/2026,ronde-van-vlaanderen,2026,Ronde van Vlaanderen,men,one_day,1.UWT,2026-04-12,2026-04-12
+la-fleche-wallone/2026,la-fleche-wallone,2026,La Flèche Wallonne,men,one_day,1.UWT,2026-04-12,2026-04-12
+tour-of-the-alps/2026,tour-of-the-alps,2026,Tour of the Alps,men,stage_race,2.Pro,2026-04-13,2026-04-17
+liege-bastogne-liege/2026,liege-bastogne-liege,2026,Liège-Bastogne-Liège,men,one_day,1.UWT,2026-04-16,2026-04-16
+brabantse-pijl/2026,brabantse-pijl,2026,Brabantse Pijl,men,one_day,1.Pro,2026-04-17,2026-04-17
+tour-de-romandie/2026,tour-de-romandie,2026,Tour de Romandie,men,stage_race,2.UWT,2026-04-18,2026-04-23
+gp-miguel-indurain/2026,gp-miguel-indurain,2026,GP Miguel Induráin,men,one_day,1.Pro,2026-04-19,2026-04-19
+scheldeprijs/2026,scheldeprijs,2026,Scheldeprijs,men,one_day,1.Pro,2026-04-19,2026-04-19
+paris-roubaix/2026,paris-roubaix,2026,Paris-Roubaix,men,one_day,1.UWT,2026-04-20,2026-04-20
+giro-d-italia/2026,giro-d-italia,2026,Giro d'Italia,men,stage_race,2.UWT,2026-05-04,2026-05-26
+boucles-de-la-mayenne/2026,boucles-de-la-mayenne,2026,Boucles de la Mayenne,men,stage_race,2.Pro,2026-05-06,2026-05-10
+tro-bro-leon/2026,tro-bro-leon,2026,Tro Bro Leon,men,one_day,1.Pro,2026-05-09,2026-05-09
+4-jours-de-dunkerque/2026,4-jours-de-dunkerque,2026,Quatre Jours de Dunkerque,men,stage_race,2.Pro,2026-05-09,2026-05-13
+tour-of-norway/2026,tour-of-norway,2026,Tour of Norway,men,stage_race,2.Pro,2026-05-14,2026-05-18
+eschborn-frankfurt/2026,eschborn-frankfurt,2026,Eschborn-Frankfurt,men,one_day,1.UWT,2026-05-16,2026-05-16
+tour-de-hongrie/2026,tour-de-hongrie,2026,Tour de Hongrie,men,stage_race,2.Pro,2026-05-19,2026-05-23
+classique-dunkerque/2026,classique-dunkerque,2026,Classique Dunkerque,men,one_day,1.Pro,2026-05-20,2026-05-20
+gp-du-morbihan/2026,gp-du-morbihan,2026,Grand Prix du Morbihan,men,one_day,1.Pro,2026-05-21,2026-05-21
+mont-ventoux-denivele-challenge/2026,mont-ventoux-denivele-challenge,2026,Mont Ventoux Dénivelé Challenge,men,one_day,1.Pro,2026-06-01,2026-06-01
+brussels-cycling-classic/2026,brussels-cycling-classic,2026,Brussels Cycling Classic,men,one_day,1.Pro,2026-06-05,2026-06-05
+baloise-belgium-tour/2026,baloise-belgium-tour,2026,Baloise Belgium Tour,men,stage_race,2.Pro,2026-06-05,2026-06-09
+copenhagen-sprint/2026,copenhagen-sprint,2026,Copenhagen Sprint,men,one_day,1.UWT,2026-06-05,2026-06-05
+dwars-door-het-hageland/2026,dwars-door-het-hageland,2026,Dwars door het Hageland,men,one_day,1.Pro,2026-06-06,2026-06-06
+tour-de-suisse/2026,tour-de-suisse,2026,Tour de Suisse,men,stage_race,2.UWT,2026-06-10,2026-06-17
+dauphine/2026,dauphine,2026,Tour Auvergne-Rhône-Alpes (Dauphiné),men,stage_race,2.UWT,2026-06-13,2026-06-20
+tour-of-slovenia/2026,tour-of-slovenia,2026,Tour of Slovenia,men,stage_race,2.Pro,2026-06-20,2026-06-24
+tour-de-wallonie/2026,tour-de-wallonie,2026,Tour de Wallonie,men,stage_race,2.Pro,2026-07-05,2026-07-09
+tour-de-france/2026,tour-de-france,2026,Tour de France,men,stage_race,2.UWT,2026-07-20,2026-08-11
+benelux-tour/2026,benelux-tour,2026,Renewi Tour,men,stage_race,2.UWT,2026-08-01,2026-08-05
+bretagne-classic/2026,bretagne-classic,2026,Bretagne Classic,men,one_day,1.UWT,2026-08-02,2026-08-02
+tour-de-france-femmes/2026,tour-de-france-femmes,2026,Tour de France Femmes,women,stage_race,2.UWT,2026-08-03,2026-08-10
+vuelta-a-burgos/2026,vuelta-a-burgos,2026,Vuelta a Burgos,men,stage_race,2.Pro,2026-08-05,2026-08-09
+danmark-rundt/2026,danmark-rundt,2026,Danmark Rundt,men,stage_race,2.Pro,2026-08-07,2026-08-11
+vuelta-a-espana/2026,vuelta-a-espana,2026,Vuelta a España,men,stage_race,2.UWT,2026-08-07,2026-08-29
+san-sebastian/2026,san-sebastian,2026,Clásica San Sebastián,men,one_day,1.UWT,2026-08-08,2026-08-08
+arctic-race-of-norway/2026,arctic-race-of-norway,2026,Arctic Race of Norway,men,stage_race,2.Pro,2026-08-08,2026-08-12
+deutschland-tour/2026,deutschland-tour,2026,Deutschland Tour,men,stage_race,2.Pro,2026-08-09,2026-08-13
+circuit-franco-belge/2026,circuit-franco-belge,2026,Circuit Franco-Belge,men,stage_race,2.Pro,2026-08-09,2026-08-13
+tour-de-pologne/2026,tour-de-pologne,2026,Tour de Pologne,men,stage_race,2.UWT,2026-08-10,2026-08-16
+cyclassics-hamburg/2026,cyclassics-hamburg,2026,Cyclassics Hamburg,men,one_day,1.UWT,2026-08-20,2026-08-20
+maryland-cycling-classic/2026,maryland-cycling-classic,2026,Maryland Cycling Classic,men,one_day,1.Pro,2026-09-02,2026-09-02
+gp-industria-artigianato-di-larciano/2026,gp-industria-artigianato-di-larciano,2026,GP Industria & Artigianato,men,one_day,1.Pro,2026-09-04,2026-09-04
+gp-de-fourmies/2026,gp-de-fourmies,2026,GP de Fourmies,men,one_day,1.Pro,2026-09-07,2026-09-07
+super-8-classic/2026,super-8-classic,2026,Super 8 Classic,men,one_day,1.Pro,2026-09-07,2026-09-07
+world-championship/2026,world-championship,2026,World Championships road race,men,championship,1.Pro,2026-09-08,2026-09-08
+tour-of-britain/2026,tour-of-britain,2026,Tour of Britain,men,stage_race,2.Pro,2026-09-10,2026-09-14
+gp-quebec/2026,gp-quebec,2026,GP de Québec,men,one_day,1.UWT,2026-09-10,2026-09-10
+gp-de-wallonie/2026,gp-de-wallonie,2026,GP de Wallonie,men,one_day,1.Pro,2026-09-10,2026-09-10
+world-championship-itt-we/2026,world-championship-itt-we,2026,World Championships ITT (women),women,championship_itt,1.Pro,2026-09-14,2026-09-14
+world-championship-we/2026,world-championship-we,2026,World Championships road race (women),women,championship,1.Pro,2026-09-15,2026-09-15
+world-championship-itt/2026,world-championship-itt,2026,World Championships ITT,men,championship_itt,1.Pro,2026-09-17,2026-09-17
+coppa-sabatini/2026,coppa-sabatini,2026,Coppa Sabatini,men,one_day,1.Pro,2026-09-20,2026-09-20
+gp-montreal/2026,gp-montreal,2026,GP de Montréal,men,one_day,1.UWT,2026-09-21,2026-09-21
+tour-de-luxembourg/2026,tour-de-luxembourg,2026,Tour de Luxembourg,men,stage_race,2.Pro,2026-09-21,2026-09-25
+tre-valli-varesine/2026,tre-valli-varesine,2026,Tre Valli Varesine,men,one_day,1.Pro,2026-10-01,2026-10-01
+giro-del-veneto/2026,giro-del-veneto,2026,Giro del Veneto,men,one_day,1.Pro,2026-10-01,2026-10-01
+japan-cup/2026,japan-cup,2026,Japan Cup,men,one_day,1.Pro,2026-10-02,2026-10-02
+tour-of-guangxi/2026,tour-of-guangxi,2026,Tour of Guangxi,men,stage_race,2.UWT,2026-10-02,2026-10-06
+giro-dell-emilia/2026,giro-dell-emilia,2026,Giro dell'Emilia,men,one_day,1.Pro,2026-10-06,2026-10-06
+uec-road-european-championships-itt-we/2026,uec-road-european-championships-itt-we,2026,European Championships ITT (women),women,championship_itt,1.Pro,2026-10-09,2026-10-09
+coppa-bernocchi/2026,coppa-bernocchi,2026,Coppa Bernocchi,men,one_day,1.Pro,2026-10-10,2026-10-10
+il-lombardia/2026,il-lombardia,2026,Il Lombardia,men,one_day,1.UWT,2026-10-14,2026-10-14
+sparkassen-munsterland-giro/2026,sparkassen-munsterland-giro,2026,Münsterland Giro,men,one_day,1.Pro,2026-10-15,2026-10-15
+uec-road-european-championships-itt/2026,uec-road-european-championships-itt,2026,European Championships ITT,men,championship_itt,1.Pro,2026-10-15,2026-10-15
+uec-road-european-championships-we/2026,uec-road-european-championships-we,2026,European Championships road race (women),women,championship,1.Pro,2026-10-18,2026-10-18
+uec-road-european-championships/2026,uec-road-european-championships,2026,European Championships road race,men,championship,1.Pro,2026-10-19,2026-10-19
+gran-piemonte/2026,gran-piemonte,2026,Gran Piemonte,men,one_day,1.Pro,2026-10-20,2026-10-20
+paris-tours/2026,paris-tours,2026,Paris-Tours,men,one_day,1.Pro,2026-10-20,2026-10-20
+veneto-classic/2026,veneto-classic,2026,Veneto Classic,men,one_day,1.Pro,2026-10-21,2026-10-21

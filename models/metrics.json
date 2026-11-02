@@ -1,0 +1,82 @@
+{
+  "trained_at": "2026-11-02T23:28:56",
+  "data": "demo",
+  "demo": true,
+  "test_years": [
+    2024,
+    2025,
+    2026
+  ],
+  "overall": {
+    "bw_brier": 0.12945508175307488,
+    "bw_brier_baseline": 0.13415682194926917,
+    "bw_logloss": 0.4067872246225224,
+    "bw_auc": 0.7703497875122589,
+    "bw_auc_baseline": 0.7181708451731335,
+    "n_break_stages": 731,
+    "member_auc": 0.8730403791326108,
+    "member_auc_baseline": 0.8402897955404219,
+    "member_precision_at_k": 0.3392687704999256,
+    "win_logloss": 2.3418281210928718,
+    "winner_top1": 0.4147239263803681,
+    "winner_top3": 0.6993865030674846,
+    "winner_top10": 0.845398773006135,
+    "n_stages": 815,
+    "winner_top3_baseline": 0.6993865030674846
+  },
+  "per_year": {
+    "2024": {
+      "bw_brier": 0.12724152212703252,
+      "bw_brier_baseline": 0.13192731022903068,
+      "bw_logloss": 0.3987469535475557,
+      "bw_auc": 0.7938699489837233,
+      "bw_auc_baseline": 0.745890355494372,
+      "n_break_stages": 286,
+      "member_auc": 0.8746519214281384,
+      "member_auc_baseline": 0.8392342148917664,
+      "member_precision_at_k": 0.35291494536889034,
+      "win_logloss": 2.3109967261953295,
+      "winner_top1": 0.41509433962264153,
+      "winner_top3": 0.7044025157232704,
+      "winner_top10": 0.8301886792452831,
+      "n_stages": 318,
+      "winner_top3_baseline": 0.7012578616352201
+    },
+    "2025": {
+      "bw_brier": 0.14705730619333096,
+      "bw_brier_baseline": 0.1510012898172433,
+      "bw_logloss": 0.45754838908232953,
+      "bw_auc": 0.7338267543859648,
+      "bw_auc_baseline": 0.6854636591478696,
+      "n_break_stages": 281,
+      "member_auc": 0.8699093200992012,
+      "member_auc_baseline": 0.8418598057397249,
+      "member_precision_at_k": 0.33138206888905075,
+      "win_logloss": 2.417817488166208,
+      "winner_top1": 0.410828025477707,
+      "winner_top3": 0.6815286624203821,
+      "winner_top10": 0.8375796178343949,
+      "n_stages": 314,
+      "winner_top3_baseline": 0.7006369426751592
+    },
+    "2026": {
+      "bw_brier": 0.10315540483439287,
+      "bw_brier_baseline": 0.10918331512663196,
+      "bw_logloss": 0.33383375092883166,
+      "bw_auc": 0.8202281837804501,
+      "bw_auc_baseline": 0.7190872648781992,
+      "n_break_stages": 164,
+      "member_auc": 0.8759960868940524,
+      "member_auc_baseline": 0.8386817221759906,
+      "member_precision_at_k": 0.3289843628178031,
+      "win_logloss": 2.2650178605267013,
+      "winner_top1": 0.4207650273224044,
+      "winner_top3": 0.7213114754098361,
+      "winner_top10": 0.8852459016393442,
+      "n_stages": 183,
+      "winner_top3_baseline": 0.6939890710382514
+    }
+  },
+  "n_stages": 2075,
+  "n_labelled": 1870
+}

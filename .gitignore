@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+.venv/
+data/pcs_pages/
+data/predictions/
+data/live_log/
